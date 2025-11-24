@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply Gemstone to all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  font-family: var(--font-gemstone);
+}
+
+/* Body defaults to Poppins */
+body {
+  overflow-x: hidden;
+  font-family: var(--font-poppins);
+}
+button {
+  @apply rounded-full shadow-md font-semibold hover:scale-105 transition border-b-[3px] border-black;
+}
+
+/* Prevent background image blur */
+[style*="background-image"] {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+}

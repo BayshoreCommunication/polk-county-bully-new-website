@@ -1,0 +1,144 @@
+"use client";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+
+export default function Hero() {
+  const [pets, setPets] = useState(0);
+  const [partners, setPartners] = useState(0);
+
+  // Counter animation for 5 seconds
+  useEffect(() => {
+    let duration = 5000; // 5 seconds
+    let startTime = performance.now();
+
+    const animate = (currentTime: number) => {
+      let progress = Math.min((currentTime - startTime) / duration, 1);
+
+      setPets(Math.floor(progress * 87)); // target: 87
+      setPartners(Math.floor(progress * 24)); // target: 24
+
+      if (progress < 1) requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+  }, []);
+
+  return (
+    // Hero
+    <section
+      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: "url('/images/homepage/hero/bg.png')",
+        backgroundPosition: "top center",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <div className="relative container mx-auto px-8 flex items-center z-10 pt-24 md:pt-32">
+        <div className="grid md:grid-cols-2 gap-10 items-center justify-center w-full">
+          {/* LEFT SIDE */}
+          <div className="text-white drop-shadow-lg ">
+            <h1 className="text-4xl md:text-7xl font-extrabold leading-normal md:leading-relaxed">
+              <span className="text-white [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))] ">
+                EVERY
+              </span>
+              <span className="text-[#FACC15] [filter:drop-shadow(0_2px_4px_rgba(0,0,0,3))] ">
+                {" "}
+                DOG{" "}
+              </span>{" "}
+              <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))]">
+                DESERVES
+              </span>{" "}
+              <br />{" "}
+              <span className=" [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))] bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
+                TO BE IN A LOVING
+              </span>{" "}
+              <br />{" "}
+              <span className="text-[#35FA25] [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))] ">
+                HOME
+              </span>
+            </h1>
+            <div>
+              <p className="my-5 [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))] text-xl">
+                Adopting a pet changes their life
+              </p>
+              <p>
+                At the Bully Project Rescue in Polk county, we believe that we
+                can end breed discrimination and cruelty by working together
+                through education and community support. Whether you’re ready to
+                adopt, foster, donate or volunteer, you can make a difference
+                for Pit Bulls and all Bully Breed dogs in Polk County, Florida.
+              </p>
+            </div>
+
+            {/* COUNTERS */}
+            <div className="flex gap-10 mt-6">
+              <div>
+                <p className="text-4xl font-bold bg-gradient-to-r from-[#F97316] to-[#FACC15] text-transparent bg-clip-text">
+                  {pets}+
+                </p>
+                <p className="text-sm flex items-center gap-2">
+                  <Image
+                    src="/images/homepage/hero/icon1.png"
+                    width={20}
+                    height={20}
+                    alt="Pets icon"
+                  />
+                  Pets Adopted
+                </p>
+              </div>
+
+              <div>
+                <p className="text-4xl font-bold bg-gradient-to-r from-[#F97316] to-[#FACC15] text-transparent bg-clip-text">
+                  {partners}+
+                </p>
+                <p className="text-sm flex items-center gap-2">
+                  <Image
+                    src="/images/homepage/hero/icon2.png"
+                    width={20}
+                    height={20}
+                    alt="Pets icon"
+                  />
+                  Partner Shelters
+                </p>
+              </div>
+            </div>
+
+            {/* BUTTONS */}
+            <div className="mt-6 flex items-center gap-6 flex-wrap">
+              <button className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow">
+                Contact Us
+              </button>
+              <div
+                className="
+  flex items-center gap-3
+  px-6 py-3
+  bg-transparent  
+  rounded-full
+  transition-all
+  group
+"
+              >
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-5 h-5 text-orange-500 ml-0.5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+
+                <span className="text-white font-bold text-lg">
+                  Explore More
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT SIDE */}
+          {/* Add image or illustration here */}
+        </div>
+      </div>
+    </section>
+  );
+}
