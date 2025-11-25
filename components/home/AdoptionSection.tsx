@@ -50,7 +50,7 @@ export default function AdoptionSection() {
             <p className="text-orange-400 font-semibold mb-6">
               Every Pet Deserves A Second Chance
             </p>
-            <p className="mb-6 text-gray-700">
+            <p className="mb-6 text-white">
               Every pet deserves love, safety, and a fresh start. At Bully
               Project Rescue, we provide medical care, compassion, and dedicated
               foster homes—helping each rescued dog heal, trust again, and find
