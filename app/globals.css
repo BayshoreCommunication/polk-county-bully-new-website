@@ -16,7 +16,7 @@ li {
 /* Body defaults to Poppins */
 body {
   overflow-x: hidden;
-  font-family: var(--font-poppins);
+  font-family: var(--font-inter);
 }
 button {
   @apply rounded-full shadow-md font-semibold hover:scale-105 transition border-b-[3px] border-black;
@@ -31,7 +31,6 @@ button {
   transform: translateZ(0);
   will-change: transform;
 }
-
 
 
 

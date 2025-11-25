@@ -29,7 +29,7 @@ export default {
       },
       fontFamily: {
         gemstone: ["var(--font-gemstone)", "sans-serif"],
-        poppins: ["var(--font-poppins)", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"]
       },
     },
   },

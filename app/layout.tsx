@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 const gemstone = localFont({
   src: "../public/fonts/Gemstone.ttf",
   variable: "--font-gemstone",
@@ -14,6 +15,13 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-poppins",
+});
+
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"], // optional
+  variable: "--font-inter", // if you want CSS variable
 });
 
 export const metadata: Metadata = {
@@ -37,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${gemstone.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${gemstone.variable} ${inter.variable}`}>
       <Navbar />
       <body className="overflow-x-hidden">{children}</body>
     </html>

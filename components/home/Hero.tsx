@@ -29,7 +29,7 @@ export default function Hero() {
       className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: "url('/images/homepage/hero/bg.png')",
-        // backgroundPosition: "top center",
+        backgroundPosition: "top center",
         backgroundAttachment: "fixed",
       }}
     >
