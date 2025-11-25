@@ -5,7 +5,7 @@ export default function FosterSection() {
     <section
       className="relative w-full bg-cover bg-center bg-no-repeat py-20 px-6"
       style={{
-        backgroundImage: "url('/images/homepage/foster/footer-bg.png')",
+        backgroundImage: "url('/images/homepage/foster/bg.png')",
       }}
     >
       {/* TOP SHADOW */}
