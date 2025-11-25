@@ -9,6 +9,7 @@ import VolunteerSection from "@/components/home/VolunteerSection";
 import DonateSection from "@/components/home/DonateSection";
 import SponsorSection from "@/components/home/SponsorSection";
 import OurMerchandise from "@/components/home/OurMerchandise";
+import CallToAction from "@/components/home/CallToAction";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <DonateSection />
       <SponsorSection />
       <OurMerchandise />
+      <CallToAction />
     </div>
   );
 }
