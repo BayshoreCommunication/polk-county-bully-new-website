@@ -59,8 +59,8 @@ export default function AdoptionSection() {
 
             <ul className="space-y-4 text-gray-700">
               <li className="flex gap-2">
-                <span className="text-black-500 font-bold">✔</span>
-                <div className="font-poppins">
+                <span className="text-black font-bold">✔</span>
+                <div className="font-inter">
                   <span className="font-semibold">
                     Save a Life <br />
                   </span>
@@ -71,8 +71,8 @@ export default function AdoptionSection() {
                 </div>
               </li>
               <li className="flex gap-2">
-                <span className="text-black-500 font-bold">✔</span>
-                <div className="font-poppins">
+                <span className="text-black font-bold">✔</span>
+                <div className="font-inter">
                   <span className="font-semibold">
                     Health Checked & Vaccinated <br />
                   </span>{" "}
@@ -82,8 +82,8 @@ export default function AdoptionSection() {
                 </div>
               </li>
               <li className="flex gap-2">
-                <span className="text-black-500 font-bold">✔</span>
-                <div className="font-poppins">
+                <span className="text-black font-bold">✔</span>
+                <div className="font-inter">
                   <span className="font-semibold">
                     Already Trained & Socialized <br />
                   </span>{" "}
@@ -94,8 +94,8 @@ export default function AdoptionSection() {
                 </div>
               </li>
               <li className="flex gap-2">
-                <span className="text-black-500 font-bold">✔</span>
-                <div className="font-poppins">
+                <span className="text-black font-bold">✔</span>
+                <div className="font-inter">
                   <span className="font-semibold">
                     Affordable & Ethical Choice <br />
                   </span>{" "}
