@@ -65,7 +65,7 @@ export default function RescueSection() {
               />
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-1 font-poppins">
+              <h3 className="text-xl font-semibold mb-1 font-inter">
                 Promoting “Adopt, Don’t Shop”
               </h3>
               <p className="text-white/90 text-sm md:text-base">
@@ -89,7 +89,7 @@ export default function RescueSection() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-1 font-poppins">
+              <h3 className="text-xl font-semibold mb-1 font-inter">
                 Advocating for Stronger Laws
               </h3>
               <p className="text-white/90 text-sm md:text-base">
