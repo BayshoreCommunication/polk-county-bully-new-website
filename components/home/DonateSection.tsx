@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function DonateSection() {
   return (
     <section
-      className="bg-cover bg-center py-20"
+      className="relative w-full bg-cover bg-center py-20"
       style={{
         backgroundImage: "url('/images/homepage/donate/bg.png')",
       }}
@@ -15,15 +15,15 @@ export default function DonateSection() {
       {/* BOTTOM SHADOW */}
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
 
-      <div className="container mx-auto px-8">
+      <div className="relative container mx-auto px-8 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Content */}
-          <div className="text-white  max-w-lg">
-            <h2 className="text-5xl font-extrabold mb-6 d text-stroke-black drop-shadow-[6px_6px_0px_#000]">
+          <div className="text-white max-w-lg">
+            <h2 className="text-5xl font-extrabold mb-6 text-stroke-black drop-shadow-[6px_6px_0px_#000]">
               DONATE
             </h2>
 
-            <p className="text-sm md:text-base mb-8 drop-shadow-md text-black">
+            <p className="text-sm md:text-base mb-8 drop-shadow-md text-white">
               Your generosity fills empty bowls, funds medical care, and keeps
               tails wagging. Every dollar brings us closer to saving another
               life.

@@ -65,7 +65,7 @@ export default function Testimonials() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-2 font-poppins">{client.name}</h3>
+              <h3 className="text-xl font-bold mb-2 font-inter">{client.name}</h3>
               <p className="text-gray-700 text-sm mb-4">{client.review}</p>
               <p className="text-yellow-500 text-lg">★★★★★</p>
             </div>
