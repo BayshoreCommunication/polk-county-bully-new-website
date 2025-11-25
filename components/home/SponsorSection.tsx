@@ -22,7 +22,7 @@ export default function SponsorSection() {
 
       {/* Center text block */}
       <div className="text-center max-w-2xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white  mb-4 text-stroke-black">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white  mb-4 text-stroke-black drop-shadow-[6px_6px_0px_#000]">
           Sponsor A Dog
         </h2>
 

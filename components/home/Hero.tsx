@@ -15,7 +15,7 @@ export default function Hero() {
       let progress = Math.min((currentTime - startTime) / duration, 1);
 
       setPets(Math.floor(progress * 8));
-      setPartners(Math.floor(progress * 5)); 
+      setPartners(Math.floor(progress * 5));
 
       if (progress < 1) requestAnimationFrame(animate);
     };
@@ -37,14 +37,9 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-10 items-center justify-center w-full">
           {/* LEFT SIDE */}
           <div className="text-white drop-shadow-lg ">
-            <h1 className="text-4xl md:text-7xl font-extrabold leading-normal md:leading-relaxed  ">
-              <span className="text-white  ">
-                EVERY
-              </span>
-              <span className="text-[#FACC15]  ">
-                {" "}
-                DOG{" "}
-              </span>{" "}
+            <h1 className="text-4xl md:text-7xl font-extrabold leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000] ">
+              <span className="text-white  ">EVERY</span>
+              <span className="text-[#FACC15]  "> DOG </span>{" "}
               <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text ">
                 DESERVES
               </span>{" "}
@@ -52,13 +47,10 @@ export default function Hero() {
               <span className="  bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
                 TO BE IN A LOVING
               </span>{" "}
-              <br />{" "}
-              <span className="text-[#35FA25] ">
-                HOME
-              </span>
+              <br /> <span className="text-[#35FA25] ">HOME</span>
             </h1>
             <div>
-              <p className="my-5 [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))] text-xl">
+              <p className="my-5   text-xl">
                 Adopting a pet changes their life
               </p>
               <p>

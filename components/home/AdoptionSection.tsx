@@ -42,8 +42,8 @@ export default function AdoptionSection() {
 
           {/* Text Content */}
           <div className="text-gray-900 font-poppins">
-            <h2 className="text-4xl md:text-7xl font-bold mb-4">
-              <span className="text-black">Why </span>
+            <h2 className="text-4xl md:text-7xl font-bold mb-4 drop-shadow-[6px_6px_0px_#000]">
+              <span className="text-white">Why </span>
               <span className="text-orange-500">Adoption Matters </span>
               <span className="text-pink-500">More Than Ever</span>
             </h2>
