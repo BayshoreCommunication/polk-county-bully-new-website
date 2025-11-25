@@ -13,7 +13,7 @@ export default function Footer() {
     <section
       className="relative bg-cover bg-center bg-no-repeat py-12 md:py-20  overflow-hidden"
       style={{
-        backgroundImage: "url('/images/homepage/Footer/footer-bg.png')",
+        backgroundImage: "url('/images/homepage/footer/footer-bg.png')",
       }}
     >
       <div className="container mx-auto  ">
