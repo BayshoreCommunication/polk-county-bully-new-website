@@ -8,6 +8,7 @@ import FosterSection from "@/components/home/FosterSection";
 import VolunteerSection from "@/components/home/VolunteerSection";
 import DonateSection from "@/components/home/DonateSection";
 import SponsorSection from "@/components/home/SponsorSection";
+import OurMerchandise from "@/components/home/OurMerchandise";
 
 export default function Home() {
   return (
@@ -16,12 +17,13 @@ export default function Home() {
       <AdoptionSection />
       <EmbeddedSite />
       <Testimonials />
-      <RescueSection/>
-      <SupportSection/>
-      <FosterSection/>
-      <VolunteerSection/>
-      <DonateSection/>
-      <SponsorSection/>
+      <RescueSection />
+      <SupportSection />
+      <FosterSection />
+      <VolunteerSection />
+      <DonateSection />
+      <SponsorSection />
+      <OurMerchandise />
     </div>
   );
 }

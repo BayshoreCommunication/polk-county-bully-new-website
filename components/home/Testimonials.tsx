@@ -11,14 +11,14 @@ export default function Testimonials() {
 
       {/* BOTTOM BLUR */}
       <div className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-white/40 to-transparent backdrop-blur-sm pointer-events-none" />
-        <div className="container mx-auto mt-[100px]">
-        <h2 className="text-center text-4xl  md:text-7xl font-extrabold text-white drop-shadow-lg mb-3">
+      <div className="container mx-auto mt-[100px]">
+        <h2 className="text-center text-4xl  md:text-7xl font-extrabold text-white  mb-3 drop-shadow-[6px_6px_0px_#000]">
           Our{" "}
-          <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))]">
+          <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text  ">
             {" "}
             Client{" "}
           </span>{" "}
-          <span className="bg-gradient-to-r from-[#FACC15] to-[#2BFD27] text-transparent bg-clip-text [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))]">
+          <span className="bg-gradient-to-r from-[#FACC15] to-[#2BFD27] text-transparent bg-clip-text  ">
             Testimonial
           </span>
         </h2>
@@ -104,8 +104,7 @@ export default function Testimonials() {
             <p className="text-yellow-500 text-lg">★★★★★</p>
           </div>
         </div>
-        </div>
-      
+      </div>
     </section>
   );
 }

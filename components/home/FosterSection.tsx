@@ -28,7 +28,9 @@ export default function FosterSection() {
 
         {/* RIGHT CONTENT */}
         <div className="text-white max-w-lg">
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-4 text-stroke-black">FOSTER</h2>
+          <h2 className="text-4xl md:text-6xl font-extrabold mb-4 text-stroke-black drop-shadow-[6px_6px_0px_#000]">
+            FOSTER
+          </h2>
 
           <p className="text-sm md:text-base opacity-90 mb-8">
             Fostering saves lives. One open home means one more dog pulled from
