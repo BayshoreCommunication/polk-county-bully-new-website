@@ -60,10 +60,9 @@ export default function Hero() {
               <p>
                 At the Bully Project Rescue in Polk county, we believe that we
                 can end breed discrimination and cruelty by working together
-                through education and community support. Whether you’re ready
-                to adopt, foster, donate or volunteer, you can make a
-                difference for Pit Bulls and all Bully Breed dogs in Polk
-                County, Florida.
+                through education and community support. Whether you’re ready to
+                adopt, foster, donate or volunteer, you can make a difference
+                for Pit Bulls and all Bully Breed dogs in Polk County, Florida.
               </p>
             </div>
 
@@ -101,11 +100,12 @@ export default function Hero() {
             </div>
 
             {/* BUTTONS */}
-            <div className="mt-6 flex items-center gap-6 flex-wrap">
+            <div className="mt-6 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
               <button className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow">
                 Contact Us
               </button>
-              <div className="flex items-center gap-3 px-6 py-3 bg-transparent rounded-full transition-all group cursor-pointer">
+
+              <div className="flex items-center gap-3  py-3 bg-transparent rounded-full transition-all group cursor-pointer">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                   <svg
                     className="w-5 h-5 text-orange-500 ml-0.5"
@@ -116,7 +116,9 @@ export default function Hero() {
                   </svg>
                 </div>
 
-                <span className="text-white font-bold text-lg">Explore More</span>
+                <span className="text-white font-bold text-lg">
+                  Explore More
+                </span>
               </div>
             </div>
           </div>
