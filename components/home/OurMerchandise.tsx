@@ -38,59 +38,59 @@ export default function OurMerchandise() {
             </div>
           </div>
           <div className="md:hidden">
-            <div className="flex gap-5 mb-5">
+            <div className="flex flex-col gap-5 mb-5">
               {/* Card 1 */}
               <Image
                 src={"/images/homepage/OurMerchandise/Merchandise-1.png"}
                 width={230}
                 height={310}
                 alt=""
-                className="w-1/2"
+                className="w-full"
               ></Image>
               <Image
                 src={"/images/homepage/OurMerchandise/Merchandise-2.png"}
                 width={480}
                 height={310}
                 alt=""
-                className="w-1/2"
+                className="w-full"
               ></Image>
               <Image
                 src={"/images/homepage/OurMerchandise/Merchandise-3.png"}
                 width={290}
                 height={310}
                 alt=""
-                className="w-1/2"
+                className="w-full"
               ></Image>
               <Image
                 src={"/images/homepage/OurMerchandise/Merchandise-4.png"}
                 width={230}
                 height={310}
                 alt=""
-                className="w-1/2"
+                className="w-full"
               ></Image>
             </div>
 
-            <div className="flex gap-5">
+            <div className="flex flex-col gap-5">
               <Image
                 src={"/images/homepage/OurMerchandise/Merchandise-5.png"}
                 width={460}
                 height={310}
                 alt=""
-                className="w-1/2"
+                className="w-full"
               ></Image>
               <Image
                 src={"/images/homepage/OurMerchandise/Merchandise-6.png"}
                 width={230}
                 height={310}
                 alt=""
-                className="w-1/2"
+                className="w-full"
               ></Image>
               <Image
                 src={"/images/homepage/OurMerchandise/Merchandise-7.png"}
                 width={560}
                 height={310}
                 alt=""
-                className="w-1/2"
+                className="w-full"
               ></Image>
             </div>
           </div>
