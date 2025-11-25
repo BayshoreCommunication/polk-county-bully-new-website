@@ -8,14 +8,14 @@ export default function Hero() {
 
   // Counter animation for 5 seconds
   useEffect(() => {
-    let duration = 5000; // 5 seconds
+    let duration = 3000; // 3 seconds
     let startTime = performance.now();
 
     const animate = (currentTime: number) => {
       let progress = Math.min((currentTime - startTime) / duration, 1);
 
-      setPets(Math.floor(progress * 87)); // target: 87
-      setPartners(Math.floor(progress * 24)); // target: 24
+      setPets(Math.floor(progress * 8));
+      setPartners(Math.floor(progress * 5)); 
 
       if (progress < 1) requestAnimationFrame(animate);
     };
@@ -37,23 +37,23 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-10 items-center justify-center w-full">
           {/* LEFT SIDE */}
           <div className="text-white drop-shadow-lg ">
-            <h1 className="text-4xl md:text-7xl font-extrabold leading-normal md:leading-relaxed">
-              <span className="text-white [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))] ">
+            <h1 className="text-4xl md:text-7xl font-extrabold leading-normal md:leading-relaxed  ">
+              <span className="text-white  ">
                 EVERY
               </span>
-              <span className="text-[#FACC15] [filter:drop-shadow(0_2px_4px_rgba(0,0,0,3))] ">
+              <span className="text-[#FACC15]  ">
                 {" "}
                 DOG{" "}
               </span>{" "}
-              <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))]">
+              <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text ">
                 DESERVES
               </span>{" "}
               <br />{" "}
-              <span className=" [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))] bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
+              <span className="  bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
                 TO BE IN A LOVING
               </span>{" "}
               <br />{" "}
-              <span className="text-[#35FA25] [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))] ">
+              <span className="text-[#35FA25] ">
                 HOME
               </span>
             </h1>
@@ -74,7 +74,7 @@ export default function Hero() {
             <div className="flex gap-10 mt-6">
               <div>
                 <p className="text-4xl font-bold bg-gradient-to-r from-[#F97316] to-[#FACC15] text-transparent bg-clip-text">
-                  {pets}+
+                  {pets}k+
                 </p>
                 <p className="text-sm flex items-center gap-2">
                   <Image
@@ -89,7 +89,7 @@ export default function Hero() {
 
               <div>
                 <p className="text-4xl font-bold bg-gradient-to-r from-[#F97316] to-[#FACC15] text-transparent bg-clip-text">
-                  {partners}+
+                  {partners}K+
                 </p>
                 <p className="text-sm flex items-center gap-2">
                   <Image

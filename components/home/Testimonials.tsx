@@ -7,10 +7,11 @@ export default function Testimonials() {
       style={{ backgroundImage: "url('/images/homepage/testimonials/bg.png')" }}
     >
       {/* TOP BLUR */}
-      <div className="absolute top-0 left-0 right-0 h-[120px] bg-gradient-to-b from-white/40 to-transparent backdrop-blur-sm pointer-events-none" />
+      {/* <div className="absolute top-0 left-0 right-0 h-[120px] bg-gradient-to-b from-white/40 to-transparent backdrop-blur-sm pointer-events-none" /> */}
 
       {/* BOTTOM BLUR */}
       <div className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-white/40 to-transparent backdrop-blur-sm pointer-events-none" />
+        <div className="container mx-auto mt-[100px]">
         <h2 className="text-center text-4xl  md:text-7xl font-extrabold text-white drop-shadow-lg mb-3">
           Our{" "}
           <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text [filter:drop-shadow(0_2px_4px_rgba(0,0,0,5))]">
@@ -25,7 +26,7 @@ export default function Testimonials() {
           Hear from families who've found their perfect furry companions.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Card 1 */}
           <div
             className=" bg-cover bg-center bg-white bg-no-repeat rounded-2xl p-6 shadow-xl text-center z-50"
@@ -103,7 +104,8 @@ export default function Testimonials() {
             <p className="text-yellow-500 text-lg">★★★★★</p>
           </div>
         </div>
-      </div>
+        </div>
+      
     </section>
   );
 }

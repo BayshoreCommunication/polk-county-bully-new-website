@@ -4,7 +4,7 @@ export default function EmbeddedSite() {
       className="bg-cover bg-center bg-no-repeat lg:pt-[100px] pb-12"
       style={{ backgroundImage: "url('/images/homepage/embedded/bg.png')" }}
     >
-      <div className="container px-8 mb-8 md:mb-16 mx-auto">
+      <div className="container px-8 mb-8 mt-16  mx-auto">
         <div className="textwidget">
           <p>
             <iframe
