@@ -55,7 +55,7 @@ export default function CallToAction() {
               </Link>
             </div>
             {/* Button */}
-            <div className="flex justify-center mt-6">
+            <div className="flex justify-center mt-8">
               <button className="bg-white text-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition flex items-center gap-2">
                 <span className="text-2xl">🐾</span> Contact Us
               </button>
