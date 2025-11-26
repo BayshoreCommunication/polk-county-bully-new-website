@@ -7,7 +7,7 @@ export default function SupportSection() {
       style={{ backgroundImage: "url('/images/homepage/support/bg.png')" }}
     >
       <div className="flex flex-col justify-center items-center text-center">
-        <h2 className="text-4xl md:text-7xl font-extrabold mb-4 text-center text-stroke-white drop-shadow-[6px_6px_0px_#000]">
+        <h2 className="text-4xl md:text-7xl mb-4 text-center text-stroke-white drop-shadow-[6px_6px_0px_#000]">
           <span className="bg-white text-transparent bg-clip-text  ">HOW </span>
           <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text  ">
             YOU CAN

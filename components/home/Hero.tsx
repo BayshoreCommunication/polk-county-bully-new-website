@@ -42,7 +42,7 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-10 items-center justify-center w-full">
           {/* LEFT SIDE */}
           <div className="text-white drop-shadow-lg">
-            <h1 className="text-4xl md:text-7xl font-extrabold leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000]">
+            <h1 className="text-4xl md:text-7xl  leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000]">
               <span className="text-white">EVERY</span>{" "}
               <span className="text-[#FACC15]">DOG </span>
               <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text">

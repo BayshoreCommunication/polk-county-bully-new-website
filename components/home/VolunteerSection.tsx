@@ -17,7 +17,7 @@ export default function VolunteerSection() {
         {/* Heading + Description */}
         <div className="flex flex-col lg:flex-row justify-between items-start mb-12 gap-6">
           {/* Title */}
-          <h2 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-[6px_6px_0px_#000] mb-4">
+          <h2 className="text-4xl md:text-6xl text-white drop-shadow-[6px_6px_0px_#000] mb-4">
             Volunteer
           </h2>
 

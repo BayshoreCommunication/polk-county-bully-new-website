@@ -31,7 +31,7 @@ export default function FosterSection() {
 
         {/* Right Content */}
         <div className="text-white max-w-lg">
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-[6px_6px_0px_#000]">
+          <h2 className="text-4xl md:text-6xl mb-4 drop-shadow-[6px_6px_0px_#000]">
             FOSTER
           </h2>
 
