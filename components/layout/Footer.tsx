@@ -82,9 +82,10 @@ export default function Footer() {
             <div className="col-span-2">
               <Image
                 src="/images/homepage/footer/footer-logo.png"
-                width={150}
-                height={150}
+                width={1000}
+                height={800}
                 alt=""
+                className="w-full h-auto max-w-[100px]"
               ></Image>
               <p className="text-white/90 text-sm md:text-base pt-4 max-w-72 w-full">
                 Helping bully breed dogs find loving homes. Adopt, foster, or
