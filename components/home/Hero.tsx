@@ -38,21 +38,21 @@ export default function Hero() {
       {/* <div className="absolute inset-0 bg-black/30"></div> */}
 
       {/* Content */}
-      <div className="relative container mx-auto px-8 flex items-center z-10 pt-24 md:pt-32">
-        <div className="grid md:grid-cols-2 gap-10 items-center justify-center w-full">
+      <div className="relative container mx-auto px-8 flex items-center z-10 pt-16 md:pt-8">
+        <div className=" w-full">
           {/* LEFT SIDE */}
-          <div className="text-white drop-shadow-lg">
-            <h1 className="text-4xl md:text-7xl  leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000]">
-              <span className="text-white">EVERY</span>{" "}
+          <div className="text-white drop-shadow-lg w-full max-w-5xl">
+            <h1 className="text-4xl md:text-8xl  leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000] tracking-wider">
+              <span className="text-white">EVERY </span>
               <span className="text-[#FACC15]">DOG </span>
               <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text">
-                DESERVES
+                DESERVES 
               </span>
-              <br />
-              <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
-                TO BE IN A LOVING
+              
+              <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text px-2">
+                 TO BE IN A LOVING
               </span>
-              <br /> <span className="text-[#35FA25]">HOME</span>
+               <span className="text-[#35FA25]"> HOME</span>
             </h1>
 
             <div>
