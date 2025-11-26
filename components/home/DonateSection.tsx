@@ -19,7 +19,7 @@ export default function DonateSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Content */}
           <div className="text-white max-w-lg">
-            <h2 className="text-5xl font-extrabold mb-6 text-stroke-black drop-shadow-[6px_6px_0px_#000]">
+            <h2 className="text-4xl md:text-6xl mb-6 text-stroke-black drop-shadow-[6px_6px_0px_#000] tracking-wider">
               DONATE
             </h2>
 

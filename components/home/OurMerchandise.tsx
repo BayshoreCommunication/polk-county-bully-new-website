@@ -15,7 +15,7 @@ export default function OurMerchandise() {
       {/* BOTTOM BLUR */}
 
       <div className="container mx-auto">
-        <h2 className="text-center text-4xl  md:text-7xl font-extrabold text-white  mb-3 drop-shadow-[6px_6px_0px_#000]">
+        <h2 className="text-center text-4xl  md:text-7xl text-white  mb-3 drop-shadow-[6px_6px_0px_#000] tracking-wider">
           Buy Our Merchandise
         </h2>
         <p className="text-center text-white/90 max-w-xl mx-auto mb-10">

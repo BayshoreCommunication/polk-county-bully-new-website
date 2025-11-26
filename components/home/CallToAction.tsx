@@ -21,7 +21,7 @@ export default function CallToAction() {
                 "url('/images/homepage/CallToAction/CTACardBg.png')",
             }}
           >
-            <h2 className="text-center text-4xl  md:text-6xl font-medium text-black  mb-3 drop-shadow-[6px_6px_0px_#fff]">
+            <h2 className="text-center text-4xl  md:text-6xl  text-black  mb-3 drop-shadow-[6px_6px_0px_#fff] tracking-wider">
               Spread the Word
             </h2>
             <p className="text-center text-black/90 max-w-xl mx-auto mb-6">

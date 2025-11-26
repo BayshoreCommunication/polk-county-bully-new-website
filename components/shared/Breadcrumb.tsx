@@ -20,7 +20,7 @@ style={{ backgroundImage: `url('${bgImage}')` }}
 
   {/* Content */}  
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-white px-4 text-center">  
-    <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold drop-shadow-[6px_6px_0px_#000]">{title}</h1>  
+    <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold drop-shadow-[6px_6px_0px_#000] tracking-wider">{title}</h1>  
 
     <div className="text-sm md:text-base flex flex-wrap justify-center gap-2 mt-2">  
       {links.map((link, index) => (  

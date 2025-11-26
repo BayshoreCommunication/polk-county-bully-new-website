@@ -27,7 +27,7 @@ export default function RescueSection() {
       <div className="relative max-w-[1640px] mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* LEFT - Dogs Image */}
         <div className="w-full md:w-1/2 flex justify-center">
-          <div className="relative w-full max-w-[500px]">
+          <div className="relative w-full max-w-[700px]">
             <Image
               src="/images/homepage/rescue/dogs.png"
               alt="Rescue Dogs"
@@ -40,7 +40,7 @@ export default function RescueSection() {
 
         {/* RIGHT - TEXT AREA */}
         <div className="w-full md:w-1/2 text-white">
-          <h2 className="text-3xl md:text-7xl font-extrabold leading-tight mb-6  text-stroke-black drop-shadow-[6px_6px_0px_#000]">
+          <h2 className="text-3xl md:text-7xl leading-tight mb-6  text-stroke-black drop-shadow-[6px_6px_0px_#000] tracking-wider">
             <span className="bg-gradient-to-r from-[#F44B80] to-[#F5724B] text-transparent bg-clip-text  ">
               Rescue, Care And{" "}
             </span>{" "}

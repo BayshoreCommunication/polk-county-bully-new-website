@@ -13,14 +13,14 @@ export default function Footer() {
     <section
       className="relative bg-cover bg-center bg-no-repeat py-12 md:py-20  overflow-hidden"
       style={{
-        backgroundImage: "url('/images/homepage/Footer/footer-bg.png')",
+        backgroundImage: "url('/images/homepage/footer/footer-bg.png')",
       }}
     >
       <div className="container mx-auto  ">
         <div className="relative">
           <div className="">
             <div className="flex gap-6 items-center px-16 py-12  rounded-full bg-[linear-gradient(97.54deg,#00A0CC_0%,#FACC15_100%)]">
-              <h2 className="text-start text-4xl  md:text-[56px] leading-none font-medium text-black   drop-shadow-[6px_6px_0px_#fff]">
+              <h2 className="text-start text-4xl  md:text-6xl leading-none text-black   drop-shadow-[6px_6px_0px_#fff] tracking-wider">
                 Be the First to Meet New Pets Right in Your Inbox
               </h2>
               <div className="max-w-xs w-full ">

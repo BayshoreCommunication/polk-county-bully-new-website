@@ -12,7 +12,7 @@ export default function PitInfo() {
     >
       <div className="container mx-auto px-8 text-white">
         {/* Top Title */}
-        <h1 className="text-center text-4xl md:text-7xl font-extrabold mb-4 drop-shadow-[6px_6px_0px_#000]">
+        <h1 className="text-center text-4xl md:text-7xl font-extrabold mb-4 drop-shadow-[6px_6px_0px_#000]  tracking-wider">
           <span className="text-[#FFFFFF]">Learn</span> <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text ">About Our</span> <span className="bg-gradient-to-r from-[#FACC15] to-[#2BFD27] text-transparent bg-clip-text ">Pits And Other Breeds</span>
         </h1>
 
