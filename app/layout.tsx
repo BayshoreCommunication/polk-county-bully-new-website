@@ -18,6 +18,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+
 const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"], // optional
@@ -27,7 +28,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Polk County Bully",
   description: "Polk County Bully Website",
-  metadataBase: new URL("https://polk-county-bully-new-website.vercel.app"),
+  metadataBase: new URL("https://bayai-chatbot-website.vercel.app"),
   alternates: {
     canonical: "/",
     languages: {
@@ -48,7 +49,7 @@ export default function RootLayout({
     <html lang="en" className={`${gemstone.variable} ${inter.variable}`}>
       <Navbar />
       <body className="overflow-x-hidden">{children}</body>
-      <Footer />
+      <Footer/>
     </html>
   );
 }

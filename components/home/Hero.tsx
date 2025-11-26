@@ -6,13 +6,13 @@ export default function Hero() {
   const [pets, setPets] = useState(0);
   const [partners, setPartners] = useState(0);
 
-  // Counter animation for 3 seconds
+  // Counter animation for 5 seconds
   useEffect(() => {
-    const duration = 3000; // 3 seconds
-    const startTime = performance.now();
+    let duration = 3000; // 3 seconds
+    let startTime = performance.now();
 
     const animate = (currentTime: number) => {
-      const progress = Math.min((currentTime - startTime) / duration, 1);
+      let progress = Math.min((currentTime - startTime) / duration, 1);
 
       setPets(Math.floor(progress * 8));
       setPartners(Math.floor(progress * 5));
@@ -24,39 +24,35 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/images/homepage/hero/bg.png')",
-          backgroundAttachment: "fixed",
-        }}
-      ></div>
-
-      {/* Optional overlay for better readability */}
-      {/* <div className="absolute inset-0 bg-black/30"></div> */}
-
-      {/* Content */}
-      <div className="relative container mx-auto px-8 flex items-center z-10 pt-16 md:pt-8">
-        <div className=" w-full">
+    // Hero
+    <section
+      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: "url('/images/homepage/hero/bg.png')",
+        backgroundPosition: "top center",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <div className="relative container mx-auto px-8 flex items-center z-10 pt-24 md:pt-32">
+        <div className="grid md:grid-cols-2 gap-10 items-center justify-center w-full">
           {/* LEFT SIDE */}
-          <div className="text-white drop-shadow-lg w-full max-w-5xl">
-            <h1 className="text-4xl md:text-8xl  leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000] tracking-wider">
-              <span className="text-white">EVERY </span>
-              <span className="text-[#FACC15]">DOG </span>
-              <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text">
-                DESERVES 
-              </span>
-              
-              <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text px-2">
-                 TO BE IN A LOVING
-              </span>
-               <span className="text-[#35FA25]"> HOME</span>
+          <div className="text-white  w-full  max-w-7xl ">
+            <h1 className="text-4xl md:text-8xl font-extrabold leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000] ">
+              <span className="text-white  ">EVERY</span>
+              <span className="text-[#FACC15]  "> DOG </span>{" "}
+              <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text ">
+                DESERVES
+              </span>{" "}
+              <br />{" "}
+              <span className="  bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
+                TO BE IN A LOVING
+              </span>{" "}
+              <br /> <span className="text-[#35FA25] ">HOME</span>
             </h1>
-
             <div>
-              <p className="my-5 text-xl">Adopting a pet changes their life</p>
+              <p className="my-5   text-xl">
+                Adopting a pet changes their life
+              </p>
               <p>
                 At the Bully Project Rescue in Polk county, we believe that we
                 can end breed discrimination and cruelty by working together
@@ -67,7 +63,7 @@ export default function Hero() {
             </div>
 
             {/* COUNTERS */}
-            <div className="flex gap-10 mt-6 flex-wrap">
+            <div className="flex gap-10 mt-6">
               <div>
                 <p className="text-4xl font-bold bg-gradient-to-r from-[#F97316] to-[#FACC15] text-transparent bg-clip-text">
                   {pets}k+
@@ -92,7 +88,7 @@ export default function Hero() {
                     src="/images/homepage/hero/icon2.png"
                     width={20}
                     height={20}
-                    alt="Partner icon"
+                    alt="Pets icon"
                   />
                   Partner Shelters
                 </p>
@@ -100,12 +96,20 @@ export default function Hero() {
             </div>
 
             {/* BUTTONS */}
-            <div className="mt-6 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+            <div className="mt-6 flex items-center gap-6 flex-wrap">
               <button className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow">
                 Contact Us
               </button>
-
-              <div className="flex items-center gap-3  py-3 bg-transparent rounded-full transition-all group cursor-pointer">
+              <div
+                className="
+  flex items-center gap-3
+  px-6 py-3
+  bg-transparent  
+  rounded-full
+  transition-all
+  group
+"
+              >
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                   <svg
                     className="w-5 h-5 text-orange-500 ml-0.5"
@@ -122,6 +126,9 @@ export default function Hero() {
               </div>
             </div>
           </div>
+
+          {/* RIGHT SIDE */}
+          {/* Add image or illustration here */}
         </div>
       </div>
     </section>

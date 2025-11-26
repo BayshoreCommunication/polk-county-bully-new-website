@@ -7,12 +7,13 @@ export default function RescueSection() {
     <section
       className="
         relative w-full 
-        bg-cover bg-center bg-no-repeat 
+        bg-contain bg-center bg-no-repeat 
         py-12 md:py-20 
         px-8
+         overflow-hidden
       "
       style={{
-        backgroundImage: "url('/images/homepage/rescue/bg-main.png')",
+        backgroundImage: "url('/images/homepage/rescue/bg-main.png')"
       }}
     >
       {/* TOP SHADOW */}
@@ -101,6 +102,11 @@ export default function RescueSection() {
           </div>
         </div>
       </div>
+
+      {/* Optional gradient overlay at the top to match first section */}
+      <div className="absolute top-0 w-full h-32 left-0 right-0 bg-gradient-to-t from-transparent to-white"></div>
+      {/* Gradient overlay at the bottom for blending */}
+      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white "></div>
     </section>
   );
 }

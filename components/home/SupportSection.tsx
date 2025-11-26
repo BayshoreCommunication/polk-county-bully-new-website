@@ -7,7 +7,7 @@ export default function SupportSection() {
       style={{ backgroundImage: "url('/images/homepage/support/bg.png')" }}
     >
       <div className="flex flex-col justify-center items-center text-center">
-        <h2 className="text-4xl md:text-7xl mb-4 text-center text-stroke-white drop-shadow-[6px_6px_0px_#000] tracking-wider">
+        <h2 className="text-4xl md:text-7xl mb-4 text-center text-stroke-white drop-shadow-[6px_6px_0px_#000]">
           <span className="bg-white text-transparent bg-clip-text  ">HOW </span>
           <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text  ">
             YOU CAN
@@ -27,7 +27,7 @@ export default function SupportSection() {
         {/* LEFT CONTENT */}
         <div className="text-white max-w-xl">
           <div className="max-w-xl">
-            <h3 className="text-4xl md:text-6xl font-extrabold mb-4 text-stroke-black drop-shadow-[6px_6px_0px_#000] tracking-wider">
+            <h3 className="text-4xl md:text-6xl font-extrabold mb-4 text-stroke-black drop-shadow-[6px_6px_0px_#000]">
               ADOPT
             </h3>
             <p className="text-white text-opacity-90 mb-6 text-sm md:text-base">
@@ -52,6 +52,10 @@ export default function SupportSection() {
           />
         </div>
       </div>
+      {/* Optional gradient overlay at the top to match first section */}
+      <div className="absolute top-0 w-full h-32 left-0 right-0 bg-gradient-to-t from-transparent to-white"></div>
+      {/* Gradient overlay at the bottom for blending */}
+      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white "></div>
     </section>
   );
 }
