@@ -13,7 +13,7 @@ export default function PitBullInfo() {
     >
       <div className="container mx-auto px-8 text-white">
         {/* Title */}
-        <h1 className="text-4xl md:text-7xl font-extrabold mb-8 drop-shadow-[6px_6px_0px_#000]">
+        <h1 className="text-4xl md:text-7xl font-extrabold mb-8 drop-shadow-[6px_6px_0px_#000]  tracking-wider">
           <span  className="bg-gradient-to-r from-[#F44B80] to-[#F5724B] text-transparent bg-clip-text ">Here Is Some Basic Information</span><span  className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text ">To Help You Think Twice About</span>   
           <span  className="text-white ">This Breed & Their Stereotypes</span>
         </h1>
@@ -66,7 +66,7 @@ export default function PitBullInfo() {
         </ol>
 
         {/* Characteristics Title */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-[#F97316] to-[#FACC15] text-transparent bg-clip-text drop-shadow-[6px_6px_0px_#000]">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-[#F97316] to-[#FACC15] text-transparent bg-clip-text drop-shadow-[6px_6px_0px_#000]  tracking-wider">
           Characteristics
         </h2>
 

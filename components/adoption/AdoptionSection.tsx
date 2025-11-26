@@ -13,7 +13,7 @@ export default function AdoptionSection() {
       {" "}
       <div className="container mx-auto px-8 text-center text-white">
         {/* Heading */}
-        <h2 className="text-3xl md:text-7xl  font-extrabold mb-8 drop-shadow-lg">
+        <h2 className="text-3xl md:text-7xl  font-extrabold mb-8 drop-shadow-lg  tracking-wider">
             <span className=" text-[#FFFFFF] drop-shadow-[6px_6px_0px_#000]" >ARE YOU READY</span><span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text drop-shadow-[6px_6px_0px_#000]"> TO GIVE ONE OF OUR BEAUTIFUL  <br />BULLIES</span><span className="bg-gradient-to-r from-[#FACC15] to-[#2BFD27] text-transparent bg-clip-text drop-shadow-[6px_6px_0px_#000]"> A FOREVER HOME?</span>
         </h2>
         {/* Image */}
