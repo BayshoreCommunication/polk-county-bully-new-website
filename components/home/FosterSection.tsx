@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FosterSection() {
   return (
@@ -41,9 +42,12 @@ export default function FosterSection() {
             and hope.
           </p>
 
-          <button className="bg-white text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition flex items-center gap-2">
+          <Link
+            href={""}
+            className="bg-white text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition flex items-center gap-2"
+          >
             Become A Foster Hero
-          </button>
+          </Link>
         </div>
       </div>
     </section>
