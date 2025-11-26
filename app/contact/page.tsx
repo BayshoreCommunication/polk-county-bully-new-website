@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import ContactPage from "@/components/contact/ContactPage";
+import SimpleMap from "@/components/contact/SimpleMap";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         bgImage="/images/adoptionpage/breadcrumb/bg.png"
       />
       <ContactPage/>
+      <SimpleMap/>
     </div>
   );
 }

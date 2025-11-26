@@ -28,15 +28,19 @@ export default function ContactPage() {
         </h1>
 
         {/* 3 Info Cards */}
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
 
           {/* Address Card */}
-          <div className="bg-white/70 backdrop-blur-md rounded-2xl p-6 shadow-md flex items-start gap-4">
+          <div className="bg-white  rounded-2xl p-6 shadow-md flex items-center justify-start gap-4 h-[200px]  bg-cover bg-no-repeat bg-center border-8 border-white" 
+            style={{
+                backgroundImage: "url('/images/contactpage/contactform/card-bg.png')",
+              }}
+          >
             <div className="p-4 bg-primary text-white rounded-xl flex items-center justify-center">
               <FaMapMarkerAlt className="text-xl" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Address</h3>
+              <h3 className="text-lg font-semibold font-inter">Address</h3>
               <p className="text-gray-700 text-sm">
                 5840 W Brannen Rd, Lakeland,
                 <br />
@@ -46,12 +50,16 @@ export default function ContactPage() {
           </div>
 
           {/* Email Card */}
-          <div className="bg-white/70 backdrop-blur-md rounded-2xl p-6 shadow-md flex items-start gap-4">
+          <div className="bg-white  rounded-2xl p-6 shadow-md flex items-center justify-start gap-4 h-[200px] bg-cover bg-no-repeat bg-center border-8 border-white"
+            style={{
+                backgroundImage: "url('/images/contactpage/contactform/card-bg.png')",
+              }}
+          >
             <div className="p-4 bg-primary text-white rounded-xl flex items-center justify-center">
               <FaEnvelope className="text-xl" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Email Address</h3>
+              <h3 className="text-lg font-semibold font-inter">Email Address</h3>
               <p className="text-gray-700 text-sm">
                 support@bullyprojectrescue.com
               </p>
@@ -59,12 +67,16 @@ export default function ContactPage() {
           </div>
 
           {/* Phone Card */}
-          <div className="bg-white/70 backdrop-blur-md rounded-2xl p-6 shadow-md flex items-start gap-4">
+          <div className="bg-white rounded-2xl p-6 shadow-md flex items-center justify-start gap-4 h-[200px] bg-cover bg-no-repeat bg-center border-8 border-white"
+            style={{
+                backgroundImage: "url('/images/contactpage/contactform/card-bg.png')",
+              }}
+          >
             <div className="p-4 bg-primary text-white rounded-xl flex items-center justify-center">
               <FaPhone className="text-xl" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Phone</h3>
+              <h3 className="text-lg font-semibold font-inter">Phone</h3>
               <p className="text-gray-700 text-sm">+1 863-816-6995</p>
             </div>
           </div>
@@ -72,7 +84,11 @@ export default function ContactPage() {
         </div>
 
         {/* Form Container */}
-        <div className="bg-white/90 backdrop-blur-lg border border-white/40 rounded-3xl p-8 md:p-10 shadow-2xl">
+        <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-8 md:p-10  bg-cover bg-no-repeat bg-center border-b-8 border-t-8 border-white"
+            style={{
+                backgroundImage: "url('/images/contactpage/contactform/form-bg.png')",
+              }}
+        >
 
           <form className="space-y-6">
             {/* First Row */}
@@ -140,7 +156,7 @@ export default function ContactPage() {
             <div className="text-center">
               <button
                 type="submit"
-                className="px-10 py-3 rounded-full bg-white shadow-xl hover:shadow-2xl transition border border-gray-300 font-semibold flex items-center justify-center gap-2 mx-auto"
+                className="px-10 py-3 rounded-full bg-white text-primary shadow-xl hover:shadow-2xl transition font-semibold flex items-center justify-center gap-2 mx-auto"
               >
                 <span>🐾</span> Send
               </button>

@@ -19,17 +19,58 @@ export default function Footer() {
       <div className="container mx-auto  ">
         <div className="relative">
           <div className="">
-            <div className="flex gap-6 items-center px-16 py-12  rounded-full bg-[linear-gradient(97.54deg,#00A0CC_0%,#FACC15_100%)]">
-              <h2 className="text-start text-4xl  md:text-6xl leading-none text-black   drop-shadow-[6px_6px_0px_#fff] tracking-wider">
+            <div
+              className="
+  flex flex-col md:flex-row 
+  gap-6 md:gap-10 
+  items-center 
+  px-6 md:px-16 
+  py-8 md:py-12  
+  rounded-3xl 
+  bg-[linear-gradient(97.54deg,#00A0CC_0%,#FACC15_100%)]
+  text-center md:text-left
+"
+            >
+              <h2
+                className="
+    text-3xl sm:text-4xl md:text-6xl 
+    leading-tight 
+    text-black 
+    drop-shadow-[6px_6px_0px_#fff] 
+    tracking-wider
+  "
+              >
                 Be the First to Meet New Pets Right in Your Inbox
               </h2>
-              <div className="max-w-xs w-full ">
+
+              <div className="w-full max-w-xs md:max-w-sm">
                 <input
                   type="email"
                   placeholder="Insert your E-mail Address"
-                  className="px-4 mb-3 py-2 rounded-full border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white w-full"
+                  className="
+        px-4 py-3 
+        mb-3 
+        rounded-full 
+        border border-gray-200 
+        text-gray-800 
+        bg-white 
+        w-full
+      "
                 />
-                <button className="bg-primary w-full text-white font-semibold px-6 py-2 rounded-r-full shadow-lg hover:bg-blue-700 transition">
+
+                <button
+                  className="
+      bg-primary 
+      w-full 
+      text-white 
+      font-semibold 
+      px-6 py-3 
+      rounded-full 
+      shadow-lg 
+      hover:bg-blue-700 
+      transition
+    "
+                >
                   Subscribe
                 </button>
               </div>
