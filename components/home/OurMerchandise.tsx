@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Reveal from "../motion/Reveal";
 export default function OurMerchandise() {
   return (
     <section
@@ -15,14 +15,18 @@ export default function OurMerchandise() {
       {/* BOTTOM BLUR */}
 
       <div className="container mx-auto">
+      <Reveal y={-100} duration={2}>
         <h2 className="text-center text-4xl  md:text-7xl text-white  mb-3 drop-shadow-[6px_6px_0px_#000] tracking-wider">
           Buy Our Merchandise
         </h2>
+
+        </Reveal>
+        <Reveal y={-100} duration={3}>
         <p className="text-center text-white/90 max-w-xl mx-auto mb-10">
           Wear your heart on your sleeve. Every shirt, mug, or tote you buy
           helps rescue more dogs — and spreads love everywhere you go.{" "}
         </p>
-
+        </Reveal>
         <div>
           {/* show from md */}
           <div className="hidden md:block">

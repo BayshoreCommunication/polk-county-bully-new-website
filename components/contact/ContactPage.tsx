@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+import Reveal from "../motion/Reveal";
+
 
 export default function ContactPage() {
   return (
@@ -16,6 +18,7 @@ export default function ContactPage() {
       <div className="relative container mx-auto px-8 py-20">
 
         {/* Title */}
+        <Reveal y={-100} duration={2}>
         <h1 className="text-center text-4xl md:text-6xl font-extrabold text-white drop-shadow-[6px_6px_0px_#000] tracking-wider mb-12">
           <span className="text-white">POLK </span>
           <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
@@ -26,11 +29,12 @@ export default function ContactPage() {
             CONTACT FORM
           </span>
         </h1>
-
+        </Reveal>
         {/* 3 Info Cards */}
         <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
 
           {/* Address Card */}
+          <Reveal y={100} x={100} duration={1}>
           <div className="bg-white  rounded-2xl p-6 shadow-md flex items-center justify-start gap-4 h-[200px]  bg-cover bg-no-repeat bg-center border-8 border-white" 
             style={{
                 backgroundImage: "url('/images/contactpage/contactform/card-bg.png')",
@@ -48,8 +52,10 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
-
+          </Reveal>
           {/* Email Card */}
+
+          <Reveal y={100} x={100} duration={2}>
           <div className="bg-white  rounded-2xl p-6 shadow-md flex items-center justify-start gap-4 h-[200px] bg-cover bg-no-repeat bg-center border-8 border-white"
             style={{
                 backgroundImage: "url('/images/contactpage/contactform/card-bg.png')",
@@ -65,8 +71,9 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
-
+          </Reveal>   
           {/* Phone Card */}
+          <Reveal y={100} x={100} duration={3}>
           <div className="bg-white rounded-2xl p-6 shadow-md flex items-center justify-start gap-4 h-[200px] bg-cover bg-no-repeat bg-center border-8 border-white"
             style={{
                 backgroundImage: "url('/images/contactpage/contactform/card-bg.png')",
@@ -80,7 +87,7 @@ export default function ContactPage() {
               <p className="text-gray-700 text-sm">+1 863-816-6995</p>
             </div>
           </div>
-
+          </Reveal>
         </div>
 
         {/* Form Container */}

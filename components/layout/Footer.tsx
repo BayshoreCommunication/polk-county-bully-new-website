@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Reveal from "../motion/Reveal";
 import {
   FaFacebook,
   FaFacebookF,
@@ -31,6 +32,7 @@ export default function Footer() {
   text-center md:text-left
 "
             >
+              <Reveal y={-100}  duration={3}>
               <h2
                 className="
     text-3xl sm:text-4xl md:text-6xl 
@@ -42,7 +44,7 @@ export default function Footer() {
               >
                 Be the First to Meet New Pets Right in Your Inbox
               </h2>
-
+              </Reveal>
               <div className="w-full max-w-xs md:max-w-sm">
                 <input
                   type="email"

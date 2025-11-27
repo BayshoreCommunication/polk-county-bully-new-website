@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Reveal from "../motion/Reveal";
 
 export default function Testimonials() {
   return (
@@ -10,6 +11,7 @@ export default function Testimonials() {
       {/* BOTTOM BLUR */}
       <div className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-white/40 to-transparent backdrop-blur-sm pointer-events-none" />
       <div className="container mx-auto mt-[100px]">
+      <Reveal y={-100} duration={2}>
         <h2 className="text-center text-4xl  md:text-7xl font-extrabold text-white  mb-3 drop-shadow-[6px_6px_0px_#000]">
           Our{" "}
           <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text  ">
@@ -20,9 +22,12 @@ export default function Testimonials() {
             Testimonial
           </span>
         </h2>
+        </Reveal>
+        <Reveal y={-100} duration={2}>
         <p className="text-center text-white/90 max-w-xl mx-auto mb-10">
           Hear from families who've found their perfect furry companions.
         </p>
+        </Reveal>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -46,6 +51,7 @@ export default function Testimonials() {
                 "Fostering with Bully Project Rescue was a life‑changing experience. I got to help dogs in need while preparing them for forever homes.",
             },
           ].map((client, index) => (
+            <Reveal y={100} x={100} duration={2}>
             <div
               key={index}
               className="bg-white rounded-2xl p-6 shadow-xl text-center z-50 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
@@ -69,6 +75,7 @@ export default function Testimonials() {
               <p className="text-gray-700 text-sm mb-4">{client.review}</p>
               <p className="text-yellow-500 text-lg">★★★★★</p>
             </div>
+            </Reveal>
           ))}
         </div>
       </div>

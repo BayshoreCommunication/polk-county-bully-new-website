@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Reveal from "../motion/Reveal";
 
 export default function RescueSection() {
   return (
@@ -16,11 +17,7 @@ export default function RescueSection() {
         backgroundImage: "url('/images/homepage/rescue/bg-main.png')"
       }}
     >
-      {/* TOP SHADOW */}
-      <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-black/40 to-transparent pointer-events-none"></div>
-
-      {/* BOTTOM SHADOW */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
+      
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/70 via-pink-600/60 to-yellow-500/70"></div>
@@ -29,6 +26,7 @@ export default function RescueSection() {
         {/* LEFT - Dogs Image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative w-full max-w-[700px]">
+          <Reveal y={100} x={100} duration={2}>
             <Image
               src="/images/homepage/rescue/dogs.png"
               alt="Rescue Dogs"
@@ -36,11 +34,14 @@ export default function RescueSection() {
               height={800}
               className="w-full h-auto drop-shadow-xl"
             />
+            </Reveal>
           </div>
         </div>
 
         {/* RIGHT - TEXT AREA */}
         <div className="w-full md:w-1/2 text-white">
+
+        <Reveal y={-100} duration={2}>
           <h2 className="text-3xl md:text-7xl leading-tight mb-6  text-stroke-black drop-shadow-[6px_6px_0px_#000] tracking-wider">
             <span className="bg-gradient-to-r from-[#F44B80] to-[#F5724B] text-transparent bg-clip-text  ">
               Rescue, Care And{" "}
@@ -53,8 +54,9 @@ export default function RescueSection() {
               Pit Bulls
             </span>
           </h2>
-
+          </Reveal>
           {/* Feature Item 1 */}
+          <Reveal y={100} duration={2}>
           <div className="flex items-start gap-4 mb-6">
             <div className="w-16 text-black flex items-center justify-center rounded-full font-bold">
               <Image
@@ -76,8 +78,9 @@ export default function RescueSection() {
               </p>
             </div>
           </div>
-
+          </Reveal>
           {/* Feature Item 2 */}
+          <Reveal y={100} duration={3 }>
           <div className="flex items-start gap-4">
             <div className="w-16 text-black flex items-center justify-center rounded-full font-bold">
               <Image
@@ -100,6 +103,7 @@ export default function RescueSection() {
               </p>
             </div>
           </div>
+          </Reveal>
         </div>
       </div>
 

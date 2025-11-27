@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Reveal from "../motion/Reveal";
 
 export default function FosterSection() {
   return (
@@ -20,6 +21,8 @@ export default function FosterSection() {
         {/* Left Image */}
         <div className="relative flex flex-col items-start gap-4">
           <div className="relative rounded-md overflow-hidden w-full max-w-2xl">
+
+          <Reveal y={100} x={100} duration={2}>
             <Image
               src="/images/homepage/foster/dog.png"
               alt="Foster Dog"
@@ -27,27 +30,31 @@ export default function FosterSection() {
               height={800}
               className="w-full h-auto object-cover rounded-md"
             />
+            </Reveal>
           </div>
         </div>
 
         {/* Right Content */}
         <div className="text-white max-w-lg">
+        <Reveal y={-100} duration={2}>
           <h2 className="text-4xl md:text-6xl mb-4 drop-shadow-[6px_6px_0px_#000] tracking-wider">
             FOSTER
           </h2>
-
+        </Reveal>
+        <Reveal y={-100} duration={3}>
           <p className="text-sm md:text-base opacity-90 mb-8 leading-relaxed">
             Fostering saves lives. One open home means one more dog pulled from
             danger. We take care of the supplies; you give them love, patience,
             and hope.
           </p>
-
-          <Link
-            href={""}
+          </Reveal>
+          <Reveal y={100} x={100} duration={2}>
+          <button
             className="bg-white text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition flex items-center gap-2"
           >
             Become A Foster Hero
-          </Link>
+          </button>
+          </Reveal>
         </div>
       </div>
       {/* Optional gradient overlay at the top to match first section */}

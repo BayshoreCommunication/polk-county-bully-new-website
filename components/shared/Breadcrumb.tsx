@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Reveal from "../motion/Reveal";
 
 interface BreadcrumbProps {
 title: string;
@@ -19,9 +20,10 @@ style={{ backgroundImage: `url('${bgImage}')` }}
   {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div>   */}
 
   {/* Content */}  
-  <div className="relative z-10 flex flex-col justify-center items-center h-full text-white px-4 text-center">  
+  <div className="relative z-10 flex flex-col justify-center items-center h-full text-white px-4 text-center">
+  <Reveal y={-100} duration={2}>  
     <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold drop-shadow-[6px_6px_0px_#000] tracking-wider">{title}</h1>  
-
+    </Reveal>
     <div className="text-sm md:text-base flex flex-wrap justify-center gap-2 mt-2">  
       {links.map((link, index) => (  
         <span key={index} className="flex items-center gap-2">  

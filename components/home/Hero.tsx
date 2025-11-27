@@ -1,4 +1,7 @@
 "use client";
+import Reveal from "../motion/Reveal";
+
+
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -6,9 +9,8 @@ export default function Hero() {
   const [pets, setPets] = useState(0);
   const [partners, setPartners] = useState(0);
 
-  // Counter animation for 5 seconds
   useEffect(() => {
-    let duration = 3000; // 3 seconds
+    let duration = 3000;
     let startTime = performance.now();
 
     const animate = (currentTime: number) => {
@@ -24,7 +26,6 @@ export default function Hero() {
   }, []);
 
   return (
-    // Hero
     <section
       className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-no-repeat"
       style={{
@@ -33,26 +34,31 @@ export default function Hero() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="relative container mx-auto px-8 flex items-center z-10 pt-24 md:pt-32">
-        <div className="grid md:grid-cols-2 gap-10 items-center justify-center w-full">
+      <div className="relative container mx-auto px-8 z-10 pt-24 md:pt-32">
+        <div className="grid md:grid-cols-[2fr_1fr] gap-10 items-center w-full">
+
           {/* LEFT SIDE */}
-          <div className="text-white  w-full  max-w-7xl ">
-            <h1 className="text-4xl md:text-8xl font-extrabold leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000] ">
-              <span className="text-white  ">EVERY</span>
-              <span className="text-[#FACC15]  "> DOG </span>{" "}
-              <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text ">
+          <div className="text-white w-full max-w-7xl">
+          <Reveal y={-100} duration={2}>
+            <h1 className="text-4xl md:text-8xl font-extrabold leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000]">
+              <span className="text-white">EVERY</span>
+              <span className="text-[#FACC15]"> DOG </span>
+              <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text">
                 DESERVES
-              </span>{" "}
-              <br />{" "}
-              <span className="  bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
                 TO BE IN A LOVING
-              </span>{" "}
-              <br /> <span className="text-[#35FA25] ">HOME</span>
+              </span>
+              <br />
+              <span className="text-[#35FA25]">HOME</span>
             </h1>
+          </Reveal>
             <div>
-              <p className="my-5   text-xl">
-                Adopting a pet changes their life
-              </p>
+            <Reveal y={100} duration={2}>
+              <p className="my-5 text-xl">Adopting a pet changes their life</p>
+             </Reveal>
+             <Reveal y={100} duration={2}>
               <p>
                 At the Bully Project Rescue in Polk county, we believe that we
                 can end breed discrimination and cruelty by working together
@@ -60,6 +66,7 @@ export default function Hero() {
                 adopt, foster, donate or volunteer, you can make a difference
                 for Pit Bulls and all Bully Breed dogs in Polk County, Florida.
               </p>
+              </Reveal>
             </div>
 
             {/* COUNTERS */}
@@ -88,7 +95,7 @@ export default function Hero() {
                     src="/images/homepage/hero/icon2.png"
                     width={20}
                     height={20}
-                    alt="Pets icon"
+                    alt="Partners icon"
                   />
                   Partner Shelters
                 </p>
@@ -96,20 +103,13 @@ export default function Hero() {
             </div>
 
             {/* BUTTONS */}
+            <Reveal y={100} x={100} duration={1}>
             <div className="mt-6 flex items-center gap-6 flex-wrap">
               <button className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow">
                 Contact Us
               </button>
-              <div
-                className="
-  flex items-center gap-3
-  px-6 py-3
-  bg-transparent  
-  rounded-full
-  transition-all
-  group
-"
-              >
+
+              <div className="flex items-center gap-3 px-6 py-3 bg-transparent rounded-full group">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                   <svg
                     className="w-5 h-5 text-orange-500 ml-0.5"
@@ -120,15 +120,15 @@ export default function Hero() {
                   </svg>
                 </div>
 
-                <span className="text-white font-bold text-lg">
-                  Explore More
-                </span>
+                <span className="text-white font-bold text-lg">Explore More</span>
               </div>
             </div>
+            </Reveal>
           </div>
 
-          {/* RIGHT SIDE */}
-          {/* Add image or illustration here */}
+          {/* RIGHT SIDE — Add image later if needed */}
+          <div></div>
+
         </div>
       </div>
     </section>
