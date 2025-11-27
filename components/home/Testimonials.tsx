@@ -10,23 +10,24 @@ export default function Testimonials() {
     >
       {/* BOTTOM BLUR */}
       <div className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-white/40 to-transparent backdrop-blur-sm pointer-events-none" />
+
       <div className="container mx-auto mt-[100px]">
-      <Reveal y={-100} duration={2}>
-        <h2 className="text-center text-4xl  md:text-7xl font-extrabold text-white  mb-3 drop-shadow-[6px_6px_0px_#000]">
-          Our{" "}
-          <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text  ">
-            {" "}
-            Client{" "}
-          </span>{" "}
-          <span className="bg-gradient-to-r from-[#FACC15] to-[#2BFD27] text-transparent bg-clip-text  ">
-            Testimonial
-          </span>
-        </h2>
-        </Reveal>
         <Reveal y={-100} duration={2}>
-        <p className="text-center text-white/90 max-w-xl mx-auto mb-10">
-          Hear from families who've found their perfect furry companions.
-        </p>
+          <h2 className="text-center text-4xl md:text-7xl font-extrabold text-white mb-3 drop-shadow-[6px_6px_0px_#000]">
+            Our{" "}
+            <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
+              Client
+            </span>{" "}
+            <span className="bg-gradient-to-r from-[#FACC15] to-[#2BFD27] text-transparent bg-clip-text">
+              Testimonial
+            </span>
+          </h2>
+        </Reveal>
+
+        <Reveal y={-100} duration={2}>
+          <p className="text-center text-white/90 max-w-xl mx-auto mb-10">
+            Hear from families who've found their perfect furry companions.
+          </p>
         </Reveal>
 
         {/* Cards */}
@@ -48,41 +49,47 @@ export default function Testimonials() {
               name: "Sacha Dubois",
               avatar: "/images/homepage/testimonials/avatar1.png",
               review:
-                "Fostering with Bully Project Rescue was a life‑changing experience. I got to help dogs in need while preparing them for forever homes.",
+                "Fostering with Bully Project Rescue was a life-changing experience. I got to help dogs in need while preparing them for forever homes.",
             },
           ].map((client, index) => (
-            <Reveal y={100} x={100} duration={2}>
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-6 shadow-xl text-center z-50 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
-              style={{
-                backgroundImage:
-                  "url('/images/homepage/testimonials/card-bg.png')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
-                <Image
-                  src={client.avatar}
-                  alt={client.name}
-                  width={80}
-                  height={80}
-                  className="object-cover"
-                />
+            <Reveal key={index} y={100} x={100} duration={2}>
+              <div
+                className="bg-white rounded-2xl p-6 shadow-xl text-center z-50 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{
+                  backgroundImage:
+                    "url('/images/homepage/testimonials/card-bg.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+                  <Image
+                    src={client.avatar}
+                    alt={client.name}
+                    width={80}
+                    height={80}
+                    className="object-cover"
+                  />
+                </div>
+
+                <h3 className="text-xl font-bold mb-2 font-poppins">
+                  {client.name}
+                </h3>
+
+                <p className="text-gray-700 text-sm mb-4">{client.review}</p>
+
+                <p className="text-yellow-500 text-lg">★★★★★</p>
               </div>
-              <h3 className="text-xl font-bold mb-2 font-poppins">{client.name}</h3>
-              <p className="text-gray-700 text-sm mb-4">{client.review}</p>
-              <p className="text-yellow-500 text-lg">★★★★★</p>
-            </div>
             </Reveal>
           ))}
         </div>
       </div>
+
       {/* Optional gradient overlay at the top to match first section */}
       <div className="absolute top-0 w-full h-32 bg-gradient-to-t from-transparent to-white"></div>
+
       {/* Gradient overlay at the bottom for blending */}
-      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white "></div>
+      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white"></div>
     </section>
   );
 }
