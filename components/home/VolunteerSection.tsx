@@ -65,9 +65,11 @@ export default function VolunteerSection() {
         <div className="flex justify-center mt-12">
 
         <Reveal y={100} x={100} duration={3}>
+          <a href="https://www.giveffect.com/charities/27544-polk-county-bully-project/volunteer_application">
           <button className="bg-white text-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition flex items-center gap-2">
             🐾 Join Our Volunteer Family
           </button>
+          </a>
           </Reveal>
         </div>
       </div>

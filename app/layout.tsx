@@ -5,7 +5,6 @@ import Navbar from "@/components/layout/Navbar";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 import { Inter } from "next/font/google";
-import Footer from "@/components/layout/Footer";
 const gemstone = localFont({
   src: "../public/fonts/Gemstone.ttf",
   variable: "--font-gemstone",
@@ -17,7 +16,6 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-poppins",
 });
-
 
 const inter = Inter({
   subsets: ["latin"],
@@ -49,7 +47,6 @@ export default function RootLayout({
     <html lang="en" className={`${gemstone.variable} ${inter.variable}`}>
       <Navbar />
       <body className="overflow-x-hidden">{children}</body>
-      <Footer/>
     </html>
   );
 }

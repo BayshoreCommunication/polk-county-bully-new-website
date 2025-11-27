@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import Reveal from "../motion/Reveal";
 
 export default function AdoptionSection() {
   return (
@@ -13,7 +12,6 @@ export default function AdoptionSection() {
       <section className="container mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Images */}
-          <Reveal y={100} x={100} duration={2}>
           <div className="flex  gap-4 mt-20">
             <div className="overflow-hidden rounded-lg">
               <Image
@@ -41,21 +39,17 @@ export default function AdoptionSection() {
               />
             </div>
           </div>
-          </Reveal>
 
           {/* Text Content */}
           <div className="text-gray-900 font-poppins">
-          <Reveal y={-100} duration={2}>
             <h2 className="text-4xl md:text-7xl font-bold mb-4 drop-shadow-[6px_6px_0px_#000]">
               <span className="text-white">Why </span>
               <span className="text-orange-500">Adoption Matters </span>
               <span className="text-pink-500">More Than Ever</span>
             </h2>
-            </Reveal>
             <p className="text-orange-400 font-semibold mb-6">
               Every Pet Deserves A Second Chance
             </p>
-            <Reveal y={100} duration={2}>
             <p className="mb-6 text-white">
               Every pet deserves love, safety, and a fresh start. At Bully
               Project Rescue, we provide medical care, compassion, and dedicated
@@ -63,8 +57,6 @@ export default function AdoptionSection() {
               their forever family.
             </p>
 
-            </Reveal>
-            <Reveal y={100} duration={3}>
             <ul className="space-y-4 text-gray-700">
               <li className="flex gap-2">
                 <span className="text-black-500 font-bold">✔</span>
@@ -116,11 +108,8 @@ export default function AdoptionSection() {
                 </div>
               </li>
             </ul>
-            </Reveal>
           </div>
         </div>
-        {/* Gradient overlay at the bottom for blending */}
-      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white "></div>
       </section>
     </main>
   );

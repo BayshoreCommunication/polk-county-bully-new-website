@@ -49,11 +49,13 @@ export default function FosterSection() {
           </p>
           </Reveal>
           <Reveal y={100} x={100} duration={2}>
+          <a href="https://petstablished.com/adoptions/personal-information?application_type=Foster&donation_section=false&form_id=24574&form_type=generic&generic_form_id=24574&pet_id=715879&section=1&selected_pets=false">
           <button
             className="bg-white text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition flex items-center gap-2"
           >
             Become A Foster Hero
           </button>
+          </a>
           </Reveal>
         </div>
       </div>
