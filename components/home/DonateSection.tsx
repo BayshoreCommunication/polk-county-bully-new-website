@@ -34,7 +34,16 @@ export default function DonateSection() {
             <Reveal y={100} x={100} duration={2}>
             <a href="https://app.giveffect.com/charities/27544-polk-county-bully-project">
             <button className="flex items-center gap-2 bg-white text-primary font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg transition">
-              <span>🐾</span> Give Hope — Donate Now
+            <div className="flex justify-center items-center gap-4">
+                    <Image
+                      src="/images/homepage/button/icon.png"
+                      alt="Dog standing"
+                      width={1000}
+                      height={800}
+                      className="w-6 h-auto object-cover"
+                    />
+                    Give Hope — Donate Now
+                  </div>
             </button>
             </a>
             </Reveal>

@@ -50,11 +50,18 @@ export default function SupportSection() {
               </p>
             </Reveal>
             <Reveal y={100} x={100} duration={2}>
-              <a
-                href="https://petstablished.com/adoptions/personal-information?application_type=Adopt&donation_section=false&form_id=24575&form_type=generic&generic_form_id=24575&pet_id=715879&section=1&selected_pets=false"
-              >
+              <a href="https://petstablished.com/adoptions/personal-information?application_type=Adopt&donation_section=false&form_id=24575&form_type=generic&generic_form_id=24575&pet_id=715879&section=1&selected_pets=false">
                 <button className="bg-white text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
-                  Adopt Today
+                  <div className="flex justify-center items-center gap-4">
+                    <Image
+                      src="/images/homepage/button/icon.png"
+                      alt="Dog standing"
+                      width={1000}
+                      height={800}
+                      className="w-6 h-auto object-cover"
+                    />
+                    Adopt Today
+                  </div>
                 </button>
               </a>
             </Reveal>

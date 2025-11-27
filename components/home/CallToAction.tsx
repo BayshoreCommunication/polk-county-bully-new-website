@@ -67,7 +67,16 @@ export default function CallToAction() {
             <div className="flex justify-center mt-8">
             <Reveal y={100} x={100} duration={3}>
               <button className="bg-white text-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition flex items-center gap-2">
-                <span className="text-2xl">🐾</span> Contact Us
+              <div className="flex justify-center items-center gap-4">
+              <Image
+                src="/images/homepage/button/icon.png"
+                alt="Dog standing"
+                width={1000}
+                height={800}
+                className="w-6 h-auto object-cover"
+              />
+              Contact Us
+            </div>
               </button>
               </Reveal>
             </div>

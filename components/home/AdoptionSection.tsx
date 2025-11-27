@@ -30,13 +30,13 @@ export default function AdoptionSection() {
               </p>
             </div>
             <div className="overflow-hidden rounded-lg">
-              <Image
-                src="/images/homepage/adoption/dog2.png"
-                alt="Dog standing"
-                width={1000}
-                height={800}
-                className="w-[300px] h-auto object-cover"
-              />
+                <Image
+                  src="/images/homepage/adoption/dog2.png"
+                  alt="Dog standing"
+                  width={1000}
+                  height={800}
+                  className="w-[300px] h-auto object-cover"
+                />
             </div>
           </div>
 

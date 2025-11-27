@@ -21,41 +21,47 @@ export default function FosterSection() {
         {/* Left Image */}
         <div className="relative flex flex-col items-start gap-4">
           <div className="relative rounded-md overflow-hidden w-full max-w-2xl">
-
-          <Reveal y={100} x={100} duration={2}>
-            <Image
-              src="/images/homepage/foster/dog.png"
-              alt="Foster Dog"
-              width={1000}
-              height={800}
-              className="w-full h-auto object-cover rounded-md"
-            />
+            <Reveal y={100} x={100} duration={2}>
+              <Image
+                src="/images/homepage/foster/dog.png"
+                alt="Foster Dog"
+                width={1000}
+                height={800}
+                className="w-full h-auto object-cover rounded-md"
+              />
             </Reveal>
           </div>
         </div>
 
         {/* Right Content */}
         <div className="text-white max-w-lg">
-        <Reveal y={-100} duration={2}>
-          <h2 className="text-4xl md:text-6xl mb-4 drop-shadow-[6px_6px_0px_#000] tracking-wider">
-            FOSTER
-          </h2>
-        </Reveal>
-        <Reveal y={-100} duration={3}>
-          <p className="text-sm md:text-base opacity-90 mb-8 leading-relaxed">
-            Fostering saves lives. One open home means one more dog pulled from
-            danger. We take care of the supplies; you give them love, patience,
-            and hope.
-          </p>
+          <Reveal y={-100} duration={2}>
+            <h2 className="text-4xl md:text-6xl mb-4 drop-shadow-[6px_6px_0px_#000] tracking-wider">
+              FOSTER
+            </h2>
+          </Reveal>
+          <Reveal y={-100} duration={3}>
+            <p className="text-sm md:text-base opacity-90 mb-8 leading-relaxed">
+              Fostering saves lives. One open home means one more dog pulled
+              from danger. We take care of the supplies; you give them love,
+              patience, and hope.
+            </p>
           </Reveal>
           <Reveal y={100} x={100} duration={2}>
-          <a href="https://petstablished.com/adoptions/personal-information?application_type=Foster&donation_section=false&form_id=24574&form_type=generic&generic_form_id=24574&pet_id=715879&section=1&selected_pets=false">
-          <button
-            className="bg-white text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition flex items-center gap-2"
-          >
-            Become A Foster Hero
-          </button>
-          </a>
+            <a href="https://petstablished.com/adoptions/personal-information?application_type=Foster&donation_section=false&form_id=24574&form_type=generic&generic_form_id=24574&pet_id=715879&section=1&selected_pets=false">
+              <button className="bg-white text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition flex items-center gap-2">
+                <div className="flex justify-center items-center gap-4">
+                  <Image
+                    src="/images/homepage/button/icon.png"
+                    alt="Dog standing"
+                    width={1000}
+                    height={800}
+                    className="w-6 h-auto object-cover"
+                  />
+                  Become A Foster Hero
+                </div>
+              </button>
+            </a>
           </Reveal>
         </div>
       </div>

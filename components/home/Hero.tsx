@@ -97,8 +97,17 @@ export default function Hero() {
 
             {/* BUTTONS */}
             <div className="mt-6 flex items-center gap-6 flex-wrap">
-              <button className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow">
-                Contact Us
+              <button className="bg-white text-primary font-semibold px-6 py-3 rounded-full shadow">
+              <div className="flex justify-center items-center gap-4">
+              <Image
+                src="/images/homepage/button/icon.png"
+                alt="Dog standing"
+                width={1000}
+                height={800}
+                className="w-6 h-auto object-cover"
+              />
+              Contact Us
+            </div>
               </button>
               <div
                 className="
