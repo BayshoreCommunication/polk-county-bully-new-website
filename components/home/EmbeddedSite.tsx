@@ -9,7 +9,7 @@ export default function EmbeddedSite() {
           <p>
             <iframe
               loading="lazy"
-              style={{ height: 800, width: "100%" , borderRadius: "30px"}}
+              style={{ height: 800, width: "100%", borderRadius: "30px" }}
               src="https://www.wagtopia.com/search/org?id=1233589&iframe=normal"
             ></iframe>
           </p>

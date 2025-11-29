@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import Reveal from "../motion/Reveal";
+
 
 export default function CallToAction() {
   return (
@@ -21,13 +23,18 @@ export default function CallToAction() {
                 "url('/images/homepage/CallToAction/CTACardBg.png')",
             }}
           >
+            <Reveal y={-100} duration={2}>
             <h2 className="text-center text-4xl  md:text-6xl  text-black  mb-3 drop-shadow-[6px_6px_0px_#fff] tracking-wider">
               Spread the Word
             </h2>
+            </Reveal>
+            <Reveal y={-100} duration={3}>
             <p className="text-center text-black/90 max-w-xl mx-auto mb-6">
               Share our mission, tell their stories, and help us reach the
               hearts of more people who care. One post can change a life.
             </p>
+            </Reveal>
+            <Reveal y={100} duration={2}>
             <div className="w-full flex justify-center gap-3">
               <Link
                 href={"#"}
@@ -54,15 +61,32 @@ export default function CallToAction() {
                 <FaYoutube size={20} />
               </Link>
             </div>
+            </Reveal>
             {/* Button */}
+            
             <div className="flex justify-center mt-8">
+            <Reveal y={100} x={100} duration={3}>
               <button className="bg-white text-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition flex items-center gap-2">
-                <span className="text-2xl">🐾</span> Contact Us
+              <div className="flex justify-center items-center gap-4">
+              <Image
+                src="/images/homepage/button/icon.png"
+                alt="Dog standing"
+                width={1000}
+                height={800}
+                className="w-6 h-auto object-cover"
+              />
+              Contact Us
+            </div>
               </button>
+              </Reveal>
             </div>
           </div>
         </div>
       </div>
+      {/* Optional gradient overlay at the top to match first section */}
+      <div className="absolute top-0 w-full h-32 left-0 right-0 bg-gradient-to-t from-transparent to-white"></div>
+      {/* Gradient overlay at the bottom for blending */}
+      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white "></div>
     </section>
   );
 }

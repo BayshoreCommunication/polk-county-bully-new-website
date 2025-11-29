@@ -1,5 +1,5 @@
 "use client";
-
+import Reveal from "../motion/Reveal";
 import Image from "next/image";
 
 export default function PitBullInfo() {
@@ -13,12 +13,14 @@ export default function PitBullInfo() {
     >
       <div className="container mx-auto px-8 text-white">
         {/* Title */}
+        <Reveal y={-100} duration={2}>
         <h1 className="text-4xl md:text-7xl font-extrabold mb-8 drop-shadow-[6px_6px_0px_#000]  tracking-wider">
           <span  className="bg-gradient-to-r from-[#F44B80] to-[#F5724B] text-transparent bg-clip-text ">Here Is Some Basic Information</span><span  className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text ">To Help You Think Twice About</span>   
           <span  className="text-white ">This Breed & Their Stereotypes</span>
         </h1>
-
+        </Reveal>
         {/* Bullet Points */}
+        <Reveal y={100} duration={3}>
         <ol className="list-decimal ml-6 space-y-4  text-xs md:text-base opacity-95 leading-relaxed mb-16 max-w-4xl ">
           <li className="font-inter">
             Let's start with the fact that Pit Bulls are not actually a breed of dog. The term
@@ -64,13 +66,17 @@ export default function PitBullInfo() {
             the second most tolerant breed behind Golden Retrievers.
           </li>
         </ol>
-
+        </Reveal>
         {/* Characteristics Title */}
+
+        <Reveal y={-100} duration={2}>
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-[#F97316] to-[#FACC15] text-transparent bg-clip-text drop-shadow-[6px_6px_0px_#000]  tracking-wider">
           Characteristics
         </h2>
-
+        </Reveal>
         {/* Characteristics Text */}
+
+              <Reveal y={-100} duration={3}>
         <div className="space-y-6 text-xs md:text-base opacity-95 max-w-4xl leading-relaxed">
           <p className="font-inter">
             Pit Bulls are intelligent, agile, loving, faithful, and extremely trainable. They love
@@ -86,7 +92,13 @@ export default function PitBullInfo() {
             Society’s tests.
           </p>
         </div>
+
+        </Reveal>
       </div>
+      {/* Optional gradient overlay at the top to match first section */}
+      <div className="absolute top-0 w-full h-32 left-0 right-0 bg-gradient-to-t from-transparent to-white"></div>
+      {/* Gradient overlay at the bottom for blending */}
+      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white "></div>
     </section>
   );
 }

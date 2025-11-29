@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-
+import Reveal from "../motion/Reveal";
 export default function AdoptionSection() {
   return (
     <main
@@ -30,37 +30,42 @@ export default function AdoptionSection() {
               </p>
             </div>
             <div className="overflow-hidden rounded-lg">
-              <Image
-                src="/images/homepage/adoption/dog2.png"
-                alt="Dog standing"
-                width={1000}
-                height={800}
-                className="w-[300px] h-auto object-cover"
-              />
+                <Image
+                  src="/images/homepage/adoption/dog2.png"
+                  alt="Dog standing"
+                  width={1000}
+                  height={800}
+                  className="w-[300px] h-auto object-cover"
+                />
             </div>
           </div>
 
           {/* Text Content */}
           <div className="text-gray-900 font-poppins">
-            <h2 className="text-4xl md:text-7xl  mb-4 drop-shadow-[6px_6px_0px_#000] tracking-wider">
+          <Reveal y={-100} duration={2}>
+            <h2 className="text-4xl md:text-7xl font-bold mb-4 drop-shadow-[6px_6px_0px_#000]">
               <span className="text-white">Why </span>
               <span className="text-orange-500">Adoption Matters </span>
               <span className="text-pink-500">More Than Ever</span>
             </h2>
+            </Reveal>
             <p className="text-orange-400 font-semibold mb-6">
               Every Pet Deserves A Second Chance
             </p>
+
+            <Reveal y={100} duration={2}>
             <p className="mb-6 text-white">
               Every pet deserves love, safety, and a fresh start. At Bully
               Project Rescue, we provide medical care, compassion, and dedicated
               foster homes—helping each rescued dog heal, trust again, and find
               their forever family.
             </p>
-
+            </Reveal>
+            <Reveal y={100} x={100} duration={2}>
             <ul className="space-y-4 text-gray-700">
               <li className="flex gap-2">
-                <span className="text-black font-bold">✔</span>
-                <div className="font-inter">
+                <span className="text-black-500 font-bold">✔</span>
+                <div className="font-poppins">
                   <span className="font-semibold">
                     Save a Life <br />
                   </span>
@@ -71,8 +76,8 @@ export default function AdoptionSection() {
                 </div>
               </li>
               <li className="flex gap-2">
-                <span className="text-black font-bold">✔</span>
-                <div className="font-inter">
+                <span className="text-black-500 font-bold">✔</span>
+                <div className="font-poppins">
                   <span className="font-semibold">
                     Health Checked & Vaccinated <br />
                   </span>{" "}
@@ -82,8 +87,8 @@ export default function AdoptionSection() {
                 </div>
               </li>
               <li className="flex gap-2">
-                <span className="text-black font-bold">✔</span>
-                <div className="font-inter">
+                <span className="text-black-500 font-bold">✔</span>
+                <div className="font-poppins">
                   <span className="font-semibold">
                     Already Trained & Socialized <br />
                   </span>{" "}
@@ -94,8 +99,8 @@ export default function AdoptionSection() {
                 </div>
               </li>
               <li className="flex gap-2">
-                <span className="text-black font-bold">✔</span>
-                <div className="font-inter">
+                <span className="text-black-500 font-bold">✔</span>
+                <div className="font-poppins">
                   <span className="font-semibold">
                     Affordable & Ethical Choice <br />
                   </span>{" "}
@@ -108,6 +113,7 @@ export default function AdoptionSection() {
                 </div>
               </li>
             </ul>
+            </Reveal>
           </div>
         </div>
       </section>
