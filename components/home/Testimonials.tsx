@@ -5,7 +5,11 @@ import Reveal from "../motion/Reveal";
 export default function Testimonials() {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat min-h-[70vh] overflow-hidden"
+      className="relative 
+    w-full 
+    bg-cover 
+    bg-center 
+    bg-no-repeat min-h-[70vh] overflow-hidden"
       style={{ backgroundImage: "url('/images/homepage/testimonials/bg.webp')" }}
     >
       {/* BOTTOM BLUR */}

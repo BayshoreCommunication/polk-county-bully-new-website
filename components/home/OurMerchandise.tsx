@@ -10,7 +10,11 @@ export default function OurMerchandise() {
 
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat min-h-[80vh] py-12 md:py-20 overflow-hidden"
+      className="relative 
+    w-full
+    bg-cover 
+    bg-center 
+    bg-no-repeat min-h-[80vh] py-12 md:py-20 overflow-hidden"
       style={{
         backgroundImage:
           "url('/images/homepage/OurMerchandise/OurMerchandiseBg.webp')",

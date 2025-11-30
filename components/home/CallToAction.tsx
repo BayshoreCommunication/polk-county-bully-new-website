@@ -7,7 +7,11 @@ import Reveal from "../motion/Reveal";
 export default function CallToAction() {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat py-12 md:py-20  overflow-hidden"
+      className="relative 
+    w-full 
+    bg-cover 
+    bg-center 
+    bg-no-repeat py-12 md:py-20  overflow-hidden"
       style={{
         backgroundImage:
           "url('/images/homepage/CallToAction/CallToActionBg.png')",

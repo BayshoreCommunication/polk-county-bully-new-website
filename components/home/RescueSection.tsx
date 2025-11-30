@@ -7,8 +7,11 @@ export default function RescueSection() {
   return (
     <section
       className="
-        relative w-full 
-        bg-contain bg-center bg-no-repeat 
+        relative 
+    w-full 
+    bg-cover 
+    bg-center 
+    bg-no-repeat
         py-12 md:py-20 
         px-8
          overflow-hidden

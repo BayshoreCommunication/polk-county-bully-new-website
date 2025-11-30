@@ -6,7 +6,11 @@ import Reveal from "../motion/Reveal";
 export default function AdoptionSection() {
   return (
     <main
-      className="bg-cover bg-center bg-no-repeat"
+      className="relative 
+    w-full
+    bg-cover 
+    bg-center 
+    bg-no-repeat"
       style={{ backgroundImage: "url('/images/homepage/adoption/bg.webp')" }}
     >
       <section className="container mx-auto px-8">

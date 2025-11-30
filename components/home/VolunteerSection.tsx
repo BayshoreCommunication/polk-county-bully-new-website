@@ -4,7 +4,11 @@ import Reveal from "../motion/Reveal";
 export default function VolunteerSection() {
   return (
     <section
-      className="relative w-full bg-cover bg-center bg-no-repeat py-20 px-6"
+      className="relative 
+    w-full 
+    bg-cover 
+    bg-center 
+    bg-no-repeat py-20 px-6"
       style={{ backgroundImage: "url('/images/homepage/volunteer/bg.webp')" }}
     >
       {/* TOP SHADOW */}

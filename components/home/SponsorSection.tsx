@@ -10,7 +10,11 @@ export default function SponsorSection() {
     <>
       {/* MAIN SECTION */}
       <section
-        className="py-48 bg-cover bg-center
+        className="py-48 relative 
+    w-full
+    bg-cover 
+    bg-center 
+    bg-no-repeat
         bg-[url('/images/homepage/sponsor/bg-mobile.png')]
         sm:bg-[url('/images/homepage/sponsor/bg.png')]"
       >

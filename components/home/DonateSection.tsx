@@ -4,7 +4,11 @@ import Reveal from "../motion/Reveal";
 export default function DonateSection() {
   return (
     <section
-      className="relative w-full bg-cover bg-center py-20"
+      className="relative 
+    w-full
+    bg-cover 
+    bg-center 
+    bg-no-repeat py-20"
       style={{
         backgroundImage: "url('/images/homepage/donate/bg.webp')",
       }}

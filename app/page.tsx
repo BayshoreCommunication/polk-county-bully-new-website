@@ -13,7 +13,7 @@ import CallToAction from "@/components/home/CallToAction";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen overflow-x-hidden">
+    <div className="relative min-h-screen">
       <Hero />
       <AdoptionSection />
       <EmbeddedSite />
