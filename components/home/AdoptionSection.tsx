@@ -102,8 +102,8 @@ export default function AdoptionSection() {
                   <li key={index} className="flex gap-3">
                     <span className="text-orange-400 font-bold">✔</span>
                     <div>
-                      <span className="font-semibold block">{item.title}</span>
-                      <span className="text-white/80 italic">{item.text}</span>
+                      <span className="font-semibold block font-inter text-black">{item.title}</span>
+                      <span className="text-white/80 font-inter">{item.text}</span>
                     </div>
                   </li>
                 ))}
