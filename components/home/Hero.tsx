@@ -4,7 +4,6 @@ import Image from "next/image";
 import Reveal from "../motion/Reveal";
 
 import { motion } from "framer-motion";
-import HeroTitle from "./HeroTitle";
 
 export default function Hero() {
   const [pets, setPets] = useState(0);
