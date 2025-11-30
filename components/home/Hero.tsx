@@ -29,7 +29,7 @@ export default function Hero() {
     <section
       className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-no-repeat"
       style={{
-        backgroundImage: "url('/images/homepage/hero/bg.png')",
+        backgroundImage: "url('/images/homepage/hero/bg.webp')",
         backgroundPosition: "top center",
         backgroundAttachment: "fixed",
       }}

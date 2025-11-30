@@ -6,7 +6,7 @@ export default function DonateSection() {
     <section
       className="relative w-full bg-cover bg-center py-20"
       style={{
-        backgroundImage: "url('/images/homepage/donate/bg.png')",
+        backgroundImage: "url('/images/homepage/donate/bg.webp')",
       }}
     >
       {/* TOP SHADOW */}

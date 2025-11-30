@@ -6,7 +6,7 @@ export default function SupportSection() {
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat py-20 px-8"
-      style={{ backgroundImage: "url('/images/homepage/support/bg.png')" }}
+      style={{ backgroundImage: "url('/images/homepage/support/bg.webp')" }}
     >
       <div className="flex flex-col justify-center items-center text-center">
         <Reveal y={-100} duration={2}>

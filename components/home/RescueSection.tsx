@@ -14,7 +14,7 @@ export default function RescueSection() {
          overflow-hidden
       "
       style={{
-        backgroundImage: "url('/images/homepage/rescue/bg-main.png')"
+        backgroundImage: "url('/images/homepage/rescue/bg-main.webp')"
       }}
     >
       

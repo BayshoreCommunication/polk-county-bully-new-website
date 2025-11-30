@@ -6,7 +6,7 @@ export default function Testimonials() {
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat min-h-[70vh] overflow-hidden"
-      style={{ backgroundImage: "url('/images/homepage/testimonials/bg.png')" }}
+      style={{ backgroundImage: "url('/images/homepage/testimonials/bg.webp')" }}
     >
       {/* BOTTOM BLUR */}
       <div className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-white/40 to-transparent backdrop-blur-sm pointer-events-none" />

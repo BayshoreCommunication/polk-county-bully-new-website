@@ -5,7 +5,7 @@ export default function VolunteerSection() {
   return (
     <section
       className="relative w-full bg-cover bg-center bg-no-repeat py-20 px-6"
-      style={{ backgroundImage: "url('/images/homepage/volunteer/bg.png')" }}
+      style={{ backgroundImage: "url('/images/homepage/volunteer/bg.webp')" }}
     >
       {/* TOP SHADOW */}
       <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-black/40 to-transparent pointer-events-none"></div>
@@ -35,10 +35,10 @@ export default function VolunteerSection() {
 
         {/* Images */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="relative w-full rounded-md overflow-hidden border-8 border-white shadow-lg">
+          <div className="relative w-full rounded-md overflow-hidden">
             <Reveal y={100} x={100} duration={3}>
               <Image
-                src="/images/homepage/volunteer/left.png"
+                src="/images/homepage/volunteer/left.webp"
                 alt="Volunteer Image 1"
                 width={1000}
                 height={800}
@@ -47,11 +47,11 @@ export default function VolunteerSection() {
             </Reveal>
           </div>
 
-          <div className="relative w-full rounded-md overflow-hidden border-8 border-white shadow-lg">
+          <div className="relative w-full rounded-md overflow-hidden ">
 
           <Reveal y={100} x={100} duration={3}>
             <Image
-              src="/images/homepage/volunteer/right.png"
+              src="/images/homepage/volunteer/right.webp"
               alt="Volunteer Image 2"
               width={1000}
               height={800}

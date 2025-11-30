@@ -13,7 +13,7 @@ export default function OurMerchandise() {
       className="relative bg-cover bg-center bg-no-repeat min-h-[80vh] py-12 md:py-20 overflow-hidden"
       style={{
         backgroundImage:
-          "url('/images/homepage/OurMerchandise/OurMerchandiseBg.png')",
+          "url('/images/homepage/OurMerchandise/OurMerchandiseBg.webp')",
       }}
     >
       <div className="container mx-auto">

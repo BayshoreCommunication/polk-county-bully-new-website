@@ -2,7 +2,7 @@ export default function EmbeddedSite() {
   return (
     <section
       className="bg-cover bg-center bg-no-repeat lg:pt-[100px] pb-12"
-      style={{ backgroundImage: "url('/images/homepage/embedded/bg.png')" }}
+      style={{ backgroundImage: "url('/images/homepage/embedded/bg.webp')" }}
     >
       <div className="container px-8 my-8  mx-auto ">
         <div className="textwidget ">
