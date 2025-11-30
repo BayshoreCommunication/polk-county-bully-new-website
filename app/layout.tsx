@@ -27,7 +27,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Polk County Bully",
   description: "Polk County Bully Website",
-  metadataBase: new URL("https://bayai-chatbot-website.vercel.app"),
+  metadataBase: new URL("https://polk-county-bully-new-website.vercel.app"),
   alternates: {
     canonical: "/",
     languages: {
