@@ -18,7 +18,7 @@ export default function VolunteerSection() {
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
 
       {/* Content */}
-      <div className="relative container mx-auto z-10">
+      <div className="relative container mx-auto z-10 h-auto">
         {/* Heading + Description */}
         <div className="flex flex-col lg:flex-row justify-between items-start mb-12 gap-6">
           {/* Title */}
@@ -42,7 +42,7 @@ export default function VolunteerSection() {
           <div className="relative w-full rounded-md overflow-hidden">
             <Reveal y={100} x={100} duration={3}>
               <Image
-                src="/images/homepage/volunteer/new-folder/left.webp"
+                src="/images/homepage/volunteer/left.png"
                 alt="Volunteer Image 1"
                 width={1000}
                 height={800}
@@ -55,7 +55,7 @@ export default function VolunteerSection() {
 
           <Reveal y={100} x={100} duration={3}>
             <Image
-              src="/images/homepage/volunteer/new-folder/right.webp"
+              src="/images/homepage/volunteer/right.png"
               alt="Volunteer Image 2"
               width={1000}
               height={800}
