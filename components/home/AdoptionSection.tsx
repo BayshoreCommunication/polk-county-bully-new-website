@@ -57,7 +57,7 @@ export default function AdoptionSection() {
           </div>
 
           {/* Text Content */}
-          <div className="text-white font-poppins">
+          <div className="text-white font-inter">
             <Reveal y={-100} duration={2}>
               <h2 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-[4px_4px_0px_#000]">
                 <span className="text-white">Why </span>
