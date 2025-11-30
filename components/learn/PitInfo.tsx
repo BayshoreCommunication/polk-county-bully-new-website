@@ -7,7 +7,7 @@ export default function PitInfo() {
     <section
       className="relative bg-cover bg-center bg-no-repeat py-16"
       style={{
-        backgroundImage: "url('images/learnpage/learn/bg.png')",
+        backgroundImage: "url('images/learnpage/learn/bg.webp')",
       }}
     >
       <div className="container mx-auto px-8 text-white">

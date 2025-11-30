@@ -8,7 +8,7 @@ export default function AdoptionSection() {
     <section
       className="relative w-full bg-cover bg-center py-16"
       style={{
-        backgroundImage: `url('/images/adoptionpage/adoption/bg.png')`,
+        backgroundImage: `url('/images/adoptionpage/adoption/bg.webp')`,
       }}
     >
       {" "}

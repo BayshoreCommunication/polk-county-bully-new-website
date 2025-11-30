@@ -8,7 +8,7 @@ export default function PitBullInfo() {
       className="relative bg-cover bg-center bg-no-repeat py-16"
       style={{
         backgroundImage:
-          "url('/images/learnpage/pitbullinfo/bg.png')",
+          "url('/images/learnpage/pitbullinfo/bg.webp')",
       }}
     >
       <div className="container mx-auto px-8 text-white">

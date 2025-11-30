@@ -25,7 +25,7 @@ useEffect(() => {
     <section
       className="relative bg-cover bg-center bg-no-repeat py-16"
       style={{
-        backgroundImage: "url('/images/aboutpage/impact/bg.png')"
+        backgroundImage: "url('/images/aboutpage/impact/bg.webp')"
       }}
     >
       <div className="container mx-auto px-8">

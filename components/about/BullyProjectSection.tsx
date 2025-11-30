@@ -7,7 +7,7 @@ export default function BullyProjectSection() {
     <section
       className="bg-cover bg-center bg-no-repeat py-16"
       style={{
-        backgroundImage: "url('/images/aboutpage/bullyproject/bg.png')",
+        backgroundImage: "url('/images/aboutpage/bullyproject/bg.webp')",
       }}
     >
       <div className="container mx-auto px-8">
