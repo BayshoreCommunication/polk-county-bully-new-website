@@ -35,7 +35,7 @@ export default function AdoptionSection() {
                 className="w-full h-auto object-cover"
               />
 
-              <p className="text-xs text-white mt-2">
+              <p className="text-xs text-black mt-2">
                 Trusted by shelters and families across the country
               </p>
 

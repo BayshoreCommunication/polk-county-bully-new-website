@@ -19,7 +19,7 @@ export default function SponsorSection() {
         sm:bg-[url('/images/homepage/sponsor/bg.png')]"
       >
         {/* CENTER TEXT */}
-        <div className="text-center max-w-2xl mx-auto">
+        <div className="text-center max-w-2xl mx-auto mt-16">
           <Reveal y={-100} duration={2}>
             <h2 className="text-4xl md:text-6xl text-white mb-4 text-stroke-black drop-shadow-[6px_6px_0px_#000] tracking-wider">
               Sponsor A Dog

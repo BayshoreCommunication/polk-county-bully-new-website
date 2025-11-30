@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Reveal from "../motion/Reveal";
 
+import { motion } from "framer-motion";
+import HeroTitle from "./HeroTitle";
+
 export default function Hero() {
   const [pets, setPets] = useState(0);
   const [partners, setPartners] = useState(0);
@@ -26,7 +29,6 @@ export default function Hero() {
 
   return (
     <section className="relative w-full min-h-screen overflow-x-hidden">
-      
       {/* Background Image Using NEXT IMAGE */}
       <Image
         src="/images/homepage/hero/bg.webp"
@@ -43,32 +45,41 @@ export default function Hero() {
       {/* Content */}
       <div className="relative container mx-auto px-6 md:px-8 pt-24 md:pt-32">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-
           {/* LEFT SIDE */}
           <div className="text-white drop-shadow-lg">
+            {/* <HeroTitle /> */}
+            {/* <Reveal y={-100} duration={2}> */}
+            <motion.h1
+              initial={{ clipPath: "inset(0 100% 0 0)" }} // Hidden: right to left
+              animate={{ clipPath: "inset(0 0 0 0)" }}     // Fully visible
+              transition={{ duration: 3, ease: [0.4, 0, 0.2, 1] }}
+              className="text-4xl md:text-7xl font-extrabold leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000] typewriter-text"
+            >
+              <span>EVERY</span>
+              <span className="text-[#FACC15]"> DOG </span>
+              <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text">
+                DESERVES
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
+                TO BE IN A LOVING
+              </span>
+              <br />
+              <span className="text-[#35FA25]">HOME</span>
+            </motion.h1>
+            {/* </Reveal> */}
 
-            <Reveal y={-100} duration={2}>
-              <h1 className="text-4xl md:text-7xl font-extrabold leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000]">
-                <span>EVERY</span>
-                <span className="text-[#FACC15]"> DOG </span>
-                <span className="bg-gradient-to-r from-[#FACC15] to-[#F97316] text-transparent bg-clip-text">
-                  DESERVES
-                </span>
-                <br />
-                <span className="bg-gradient-to-r from-[#F7734E] to-[#F44B80] text-transparent bg-clip-text">
-                  TO BE IN A LOVING
-                </span>
-                <br />
-                <span className="text-[#35FA25]">HOME</span>
-              </h1>
-            </Reveal>
-
-            <p className="my-5 text-xl">Adopting a pet changes their life</p>
+            <p className="my-5 text-xl text-outline">
+              Adopting A Pet Changes Their Life
+            </p>
 
             <Reveal y={100} x={100} duration={2}>
               <p>
                 At the Bully Project Rescue in Polk county, we believe that we
-                can end breed discrimination and cruelty by working together...
+                can end breed discrimination and cruelty by working together
+                through education and community support. Whether you’re ready to
+                adopt, foster, donate or volunteer, you can make a difference
+                for Pit Bulls and all Bully Breed dogs in Polk County, Florida.
               </p>
             </Reveal>
 
@@ -131,13 +142,12 @@ export default function Hero() {
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
-                  <span className="text-white font-bold text-lg">
+                  <span className="text-white font-bold text-lg text-outline">
                     Explore More
                   </span>
                 </div>
               </div>
             </Reveal>
-
           </div>
         </div>
       </div>

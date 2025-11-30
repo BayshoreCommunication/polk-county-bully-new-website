@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Reveal from "../motion/Reveal";
-
+import { motion } from "framer-motion";
 export default function BullyProjectSection() {
   return (
     <section
@@ -24,15 +24,19 @@ export default function BullyProjectSection() {
                 className="w-full max-w-2xl h-auto object-cover"
               />
             </Reveal>
-            <p className="text-xs text-gray-200 mt-2">
+            <p className="text-xs text-gray-200 md:mt-[-30px] mt-[-0px]">
               Bully Project Rescue Founder: Shannon Medina (Left)
             </p>
             <p className="text-xs text-gray-200 mt-2">Angie Lorio (Right)</p>
           </div>
 
           {/* TEXT CONTENT */}
-          <div><Reveal y={-100} duration={2}>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-[6px_6px_0px_#000] tracking-wider">
+          <div>
+            <Reveal y={-100} duration={2}>
+            <h2 
+            
+            
+            className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-[6px_6px_0px_#000] tracking-wider">
               <span className="text-[#1F1F1F] px-2">POLK</span>{" "}
               <span className="bg-gradient-to-r from-[#F97316] to-[#FACC15] text-transparent bg-clip-text px-2">
                 COUNTRY

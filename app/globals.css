@@ -38,7 +38,61 @@ button {
   will-change: transform;
 }
 
+.text-outline {
+  color: white;
+  -webkit-text-stroke: 5px black; /* stroke thickness */
+  paint-order: stroke fill;
+}
 
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
 
+.  {
+  overflow: hidden; /* Hides the text initially */
+  white-space: nowrap; /* Keeps text on a single line */
+  width: 0; /* Starts with zero width */
+  border-right: 2px solid #333; /* Simulates a blinking cursor */
+  animation: 
+    typing 4s steps(20, end) forwards, /* Typing animation */
+    blink-cursor 0.75s step-end infinite; /* Blinking cursor animation */
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Expands the width to reveal the text */
+  }
+}
+
+/* Keyframes for the blinking cursor animation */
+@keyframes blink-cursor {
+  from, to {
+    border-color: transparent; /* Cursor invisible */
+  }
+  50% {
+    border-color: #333; /* Cursor visible */
+  }
+}

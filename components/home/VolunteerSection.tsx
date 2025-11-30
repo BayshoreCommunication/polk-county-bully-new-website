@@ -43,7 +43,7 @@ export default function VolunteerSection() {
           <div className="relative w-full rounded-md overflow-hidden aspect-[4/3]">
             <Reveal y={100} x={100} duration={3}>
               <Image
-                src="/images/homepage/volunteer/left.png"
+                src="/images/homepage/volunteer/new-folder/left.webp"
                 alt="Volunteer Image 1"
                 fill
                 className="object-contain"
@@ -55,7 +55,7 @@ export default function VolunteerSection() {
           <div className="relative w-full rounded-md overflow-hidden aspect-[4/3]">
             <Reveal y={100} x={100} duration={3}>
               <Image
-                src="/images/homepage/volunteer/right.png"
+                src="/images/homepage/volunteer/new-folder/right.webp"
                 alt="Volunteer Image 2"
                 fill
                 className="object-contain"
