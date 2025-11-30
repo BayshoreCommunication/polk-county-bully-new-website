@@ -42,7 +42,7 @@ export default function VolunteerSection() {
           <div className="relative w-full rounded-md overflow-hidden">
             <Reveal y={100} x={100} duration={3}>
               <Image
-                src="/images/homepage/volunteer/left.webp"
+                src="/images/homepage/volunteer/new-folder/left.webp"
                 alt="Volunteer Image 1"
                 width={1000}
                 height={800}
@@ -52,41 +52,44 @@ export default function VolunteerSection() {
           </div>
 
           <div className="relative w-full rounded-md overflow-hidden ">
-            <Reveal y={100} x={100} duration={3}>
-              <Image
-                src="/images/homepage/volunteer/right.webp"
-                alt="Volunteer Image 2"
-                width={1000}
-                height={800}
-                className="object-cover w-full h-auto"
-              />
+
+          <Reveal y={100} x={100} duration={3}>
+            <Image
+              src="/images/homepage/volunteer/new-folder/right.webp"
+              alt="Volunteer Image 2"
+              width={1000}
+              height={800}
+              className="object-cover w-full h-auto"
+            />
             </Reveal>
           </div>
         </div>
 
         {/* Button */}
         <div className="flex justify-center mt-12">
-          <Reveal y={100} x={100} duration={3}>
-            <a href="https://www.giveffect.com/charities/27544-polk-county-bully-project/volunteer_application">
-              <button className="bg-white text-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition flex items-center gap-2">
-                <div className="flex justify-center items-center gap-4">
-                  <Image
-                    src="/images/homepage/button/icon.png"
-                    alt="Dog standing"
-                    width={1000}
-                    height={800}
-                    className="w-6 h-auto object-cover"
-                  />
-                  Join Our Volunteer Family
-                </div>
-              </button>
-            </a>
+
+        <Reveal y={100} x={100} duration={3}>
+          <a href="https://www.giveffect.com/charities/27544-polk-county-bully-project/volunteer_application">
+          <button className="bg-white text-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition flex items-center gap-2">
+          <div className="flex justify-center items-center gap-4">
+                    <Image
+                      src="/images/homepage/button/icon.png"
+                      alt="Dog standing"
+                      width={1000}
+                      height={800}
+                      className="w-6 h-auto object-cover"
+                    />
+                    Join Our Volunteer Family
+                  </div>
+          </button>
+          </a>
           </Reveal>
         </div>
       </div>
       {/* Optional gradient overlay at the top to match first section */}
-      <div className="absolute top-0 w-full h-32 left-0 right-0 bg-gradient-to-t from-transparent to-white -z-10"></div>
-      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white -z-10"></div>
+      <div className="absolute top-0 w-full h-32 left-0 right-0 bg-gradient-to-t from-transparent to-white"></div>
+      {/* Gradient overlay at the bottom for blending */}
+      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white "></div>
     </section>
   );
 }
