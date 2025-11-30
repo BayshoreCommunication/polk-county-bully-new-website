@@ -39,50 +39,48 @@ export default function VolunteerSection() {
 
         {/* Images */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="relative w-full rounded-md overflow-hidden">
+          {/* Left Image */}
+          <div className="relative w-full rounded-md overflow-hidden aspect-[4/3]">
             <Reveal y={100} x={100} duration={3}>
               <Image
                 src="/images/homepage/volunteer/left.png"
                 alt="Volunteer Image 1"
-                width={1000}
-                height={800}
-                className="object-cover w-full h-auto"
+                fill
+                className="object-contain"
               />
             </Reveal>
           </div>
 
-          <div className="relative w-full rounded-md overflow-hidden ">
-
-          <Reveal y={100} x={100} duration={3}>
-            <Image
-              src="/images/homepage/volunteer/right.png"
-              alt="Volunteer Image 2"
-              width={1000}
-              height={800}
-              className="object-cover w-full h-auto"
-            />
+          {/* Right Image */}
+          <div className="relative w-full rounded-md overflow-hidden aspect-[4/3]">
+            <Reveal y={100} x={100} duration={3}>
+              <Image
+                src="/images/homepage/volunteer/right.png"
+                alt="Volunteer Image 2"
+                fill
+                className="object-contain"
+              />
             </Reveal>
           </div>
         </div>
 
         {/* Button */}
         <div className="flex justify-center mt-12">
-
-        <Reveal y={100} x={100} duration={3}>
-          <a href="https://www.giveffect.com/charities/27544-polk-county-bully-project/volunteer_application">
-          <button className="bg-white text-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition flex items-center gap-2">
-          <div className="flex justify-center items-center gap-4">
-                    <Image
-                      src="/images/homepage/button/icon.png"
-                      alt="Dog standing"
-                      width={1000}
-                      height={800}
-                      className="w-6 h-auto object-cover"
-                    />
-                    Join Our Volunteer Family
-                  </div>
-          </button>
-          </a>
+          <Reveal y={100} x={100} duration={3}>
+            <a href="https://www.giveffect.com/charities/27544-polk-county-bully-project/volunteer_application">
+              <button className="bg-white text-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition flex items-center gap-2">
+                <div className="flex justify-center items-center gap-4">
+                  <Image
+                    src="/images/homepage/button/icon.png"
+                    alt="Dog standing"
+                    width={1000}
+                    height={800}
+                    className="w-6 h-auto object-cover"
+                  />
+                  Join Our Volunteer Family
+                </div>
+              </button>
+            </a>
           </Reveal>
         </div>
       </div>
