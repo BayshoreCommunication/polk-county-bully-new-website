@@ -8,8 +8,7 @@ export default function AdoptionSection() {
     <main
       className="relative 
     w-full
-    bg-cover 
-    bg-center 
+    bg-center md:bg-center bg-left 
     bg-no-repeat"
       style={{ backgroundImage: "url('/images/homepage/adoption/bg.webp')" }}
     >

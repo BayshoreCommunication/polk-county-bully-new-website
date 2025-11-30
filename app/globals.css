@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+html, body {
+  overflow-x: hidden;
+}
+
 /* Apply Gemstone to all headings */
 h1,
 h2,
