@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
 export default function ImpactSection() {
   const [inView, setInView] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const videoId = "BsknQQCMqyA";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +21,6 @@ export default function ImpactSection() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Function to handle play button click with autoplay
   const handlePlayClick = () => {
     setIsVideoPlaying(true);
   };
@@ -34,7 +33,6 @@ export default function ImpactSection() {
       }}
     >
       <div className="container mx-auto px-8">
-
         {/* TEXT CONTENT */}
         <div className="max-w-8xl text-white space-y-4 mb-12 text-center">
           <p>
@@ -79,16 +77,14 @@ export default function ImpactSection() {
         </div>
 
         {/* Video Section */}
-        <div className="flex justify-center items-center">
-          <div className="relative  rounded-2xl overflow-hidden">
+        <div className="flex justify-center items-center mt-12">
+          <div className="relative rounded-2xl overflow-hidden">
             {!isVideoPlaying ? (
               <>
-                <Image
-                  src="/images/aboutpage/impact/container.png"
-                  alt="Video Thumbnail"
-                  width={1000}
-                  height={563}
-                  className="h-auto w-[1000px]"
+                <img
+                  src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                  alt="YouTube Video Thumbnail"
+                  className="h-auto w-[1000px] rounded-2xl"
                 />
                 <button
                   type="button"
@@ -110,8 +106,8 @@ export default function ImpactSection() {
               </>
             ) : (
               <iframe
-                className="h-[563px] w-[1000px]"
-                src="https://www.youtube.com/embed/BsknQQCMqyA?si=7es-fcexV8sy5Obq&autoplay=1&mute=0"
+                className="h-[563px] w-[1000px] rounded-2xl"
+                src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0`}
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
@@ -119,13 +115,11 @@ export default function ImpactSection() {
             )}
           </div>
         </div>
-
       </div>
 
-      {/* Optional gradient overlay at the top to match first section */}
+      {/* Gradient overlays */}
       <div className="absolute top-0 w-full h-32 left-0 right-0 bg-gradient-to-t from-transparent to-white"></div>
-      {/* Gradient overlay at the bottom for blending */}
-      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white "></div>
+      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white"></div>
     </section>
   );
 }

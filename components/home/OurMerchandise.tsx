@@ -82,7 +82,7 @@ export default function OurMerchandise() {
                   height={800}
                   className="w-6 h-auto object-cover"
                 />
-                Sponsor A Rescue Dog
+                Buy our Merchandise
               </div>
             </button>
           </div>
