@@ -108,9 +108,9 @@ export default function RescueSection() {
       </div>
 
       {/* Optional gradient overlay at the top to match first section */}
-      <div className="absolute top-0 w-full h-16 left-0 right-0 bg-gradient-to-t from-transparent to-blue-100"></div> {/* Reduced height */}
+      <div className="absolute top-0 w-full h-16 left-0 right-0 bg-gradient-to-t from-transparent to-white"></div> {/* Reduced height */}
       {/* Gradient overlay at the bottom for blending - SIGNIFICANTLY REDUCED */}
-      <div className="absolute bottom-0 w-full left-0 right-0 h-6 bg-gradient-to-b from-transparent to-blue-100 "></div> {/* Significantly reduced height */}
+      <div className="absolute bottom-0 w-full left-0 right-0 h-6 bg-gradient-to-b from-transparent to-white "></div> {/* Significantly reduced height */}
     </section>
   );
 }

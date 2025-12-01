@@ -70,9 +70,9 @@ export default function FosterSection() {
         </div>
       </div>
       {/* Optional gradient overlay at the top to match first section */}
-      <div className="absolute top-0 w-full h-16 left-0 right-0 bg-gradient-to-t from-transparent to-blue-100"></div>
+      <div className="absolute top-0 w-full h-16 left-0 right-0 bg-gradient-to-t from-transparent to-white"></div>
       {/* Gradient overlay at the bottom for blending */}
-      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-blue-100 "></div>
+      <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white "></div>
     </section>
   );
 }
