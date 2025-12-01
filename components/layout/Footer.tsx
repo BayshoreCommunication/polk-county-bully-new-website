@@ -163,7 +163,7 @@ export default function Footer() {
                 href="https://www.giveffect.com/charities/27544-polk-county-bully-project/volunteer_application"
                 className="block text-white/90 mb-2 text-sm"
               >
-                <span className="text-xl">›</span> Contact Information  
+                <span className="text-xl">›</span> Volunteer Information  
               </Link>
               <Link
                 href="https://app.giveffect.com/charities/27544-polk-county-bully-project"

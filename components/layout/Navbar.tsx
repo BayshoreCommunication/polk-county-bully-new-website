@@ -58,13 +58,15 @@ export default function Navbar() {
       <div className="container flex items-center justify-between py-4">
         {/* Logo */}
         <div className="flex items-center">
-          <Image
-            src="/images/homepage/navbar/logo.webp"
-            width={1000}
-            height={800}
-            alt="Logo"
-            className="rounded w-16 h-auto transition-all duration-300 "
-          />
+          <Link href="/">
+            <Image
+              src="/images/homepage/navbar/logo.webp"
+              width={1000}
+              height={800}
+              alt="Logo"
+              className="rounded w-16 h-auto transition-all duration-300 cursor-pointer"
+            />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
@@ -125,13 +127,16 @@ export default function Navbar() {
             <div className="relative z-50 flex flex-col h-full text-white">
               {/* Top Bar: Logo + Close */}
               <div className="flex items-center justify-between px-6 py-4">
-                <Image
-                  src="/images/homepage/navbar/logo.webp"
-                  width={1000}
-                  height={800}
-                  alt="Logo"
-                  className="w-20 h-auto rounded"
-                />
+                <Link href="/">
+                  <Image
+                    src="/images/homepage/navbar/logo.webp"
+                    width={1000}
+                    height={800}
+                    alt="Logo"
+                    className="w-20 h-auto rounded cursor-pointer"
+                    onClick={() => setOpen(false)} // close menu on click
+                  />
+                </Link>
                 <div
                   className="text-white text-3xl cursor-pointer"
                   onClick={() => setOpen(false)}
