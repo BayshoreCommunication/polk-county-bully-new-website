@@ -59,11 +59,11 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center">
           <Image
-            src="/images/homepage/navbar/logo.png"
+            src="/images/homepage/navbar/logo.webp"
             width={1000}
             height={800}
             alt="Logo"
-            className="rounded w-16 h-auto transition-all duration-300"
+            className="rounded w-16 h-auto transition-all duration-300 "
           />
         </div>
 
