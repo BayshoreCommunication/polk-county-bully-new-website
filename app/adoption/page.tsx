@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import AdoptionSection from "@/components/adoption/AdoptionSection";
+import EmbeddedSite from "@/components/home/EmbeddedSite";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         bgImage="/images/adoptionpage/breadcrumb/bg.png"
       />
       <AdoptionSection/>
+      <EmbeddedSite />
     </div>
   );
 }

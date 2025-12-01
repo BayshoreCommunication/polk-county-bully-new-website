@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Reveal from "../motion/Reveal";
-
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -49,9 +49,14 @@ export default function Hero() {
             {/* <HeroTitle /> */}
             {/* <Reveal y={-100} duration={2}> */}
             <motion.h1
-              initial={{ clipPath: "inset(0 100% 0 0)" }} // Hidden: right to left
-              animate={{ clipPath: "inset(0 0 0 0)" }}     // Fully visible
-              transition={{ duration: 3, ease: [0.4, 0, 0.2, 1] }}
+              initial={{ clipPath: "inset(0 100% 0 0)" }}
+              animate={{ clipPath: "inset(0 0 0 0)" }}
+              transition={{ 
+                type: "spring",
+                stiffness: 100,
+                damping: 15,
+                mass: 0.8 // Lighter for smoother motion
+              }}
               className="text-4xl md:text-7xl font-extrabold leading-normal md:leading-relaxed drop-shadow-[6px_6px_0px_#000] typewriter-text"
             >
               <span>EVERY</span>
@@ -127,11 +132,11 @@ export default function Hero() {
                       height={800}
                       className="w-6 h-auto object-cover"
                     />
-                    Contact Us
+                    <Link href="/contact">Contact Us</Link>
                   </div>
                 </button>
 
-                <div className="flex items-center gap-3 px-6 py-3 bg-transparent rounded-full group">
+                {/* <div className="flex items-center gap-3 px-6 py-3 bg-transparent rounded-full group">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                     <svg
                       className="w-5 h-5 text-orange-500"
@@ -144,7 +149,7 @@ export default function Hero() {
                   <span className="text-white font-bold text-lg text-outline">
                     Explore More
                   </span>
-                </div>
+                </div> */}
               </div>
             </Reveal>
           </div>

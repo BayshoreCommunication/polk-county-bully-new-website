@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import {  FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa6";
+
 import Reveal from "../motion/Reveal";
 
 
@@ -41,25 +43,25 @@ export default function CallToAction() {
             <Reveal y={100} duration={2}>
             <div className="w-full flex justify-center gap-3">
               <Link
-                href={"#"}
+                href={"https://www.facebook.com/polkcountybullyproject"}
                 className="w-9 lg:w-12 h-9 lg:h-12 rounded-full bg-white hover:text-[#009DCA] duration-300 drop-shadow-[0px_6px_0px_#000] flex justify-center items-center"
               >
-                <FaFacebookF size={20} />
+                <FaFacebookF size={20}/>
               </Link>
               <Link
-                href={"#"}
+                href={"https://www.instagram.com/polkcountybullyproject/"}
                 className="w-9 lg:w-12 h-9 lg:h-12 rounded-full bg-white hover:text-[#009DCA] duration-300 drop-shadow-[0px_6px_0px_#000] flex justify-center items-center"
               >
                 <FaInstagram size={20} />
               </Link>
               <Link
-                href={"#"}
+                href={"https://www.tiktok.com/@polkcountybullyproject"}
                 className="w-9 lg:w-12 h-9 lg:h-12 rounded-full bg-white hover:text-[#009DCA] duration-300 drop-shadow-[0px_6px_0px_#000] flex justify-center items-center"
               >
                 <FaTiktok size={20} />
               </Link>
               <Link
-                href={"#"}
+                href={"https://www.youtube.com/@TheBullyProjecct"}
                 className="w-9 lg:w-12 h-9 lg:h-12 rounded-full bg-white hover:text-[#009DCA] duration-300 drop-shadow-[0px_6px_0px_#000] flex justify-center items-center"
               >
                 <FaYoutube size={20} />
@@ -79,7 +81,7 @@ export default function CallToAction() {
                 height={800}
                 className="w-6 h-auto object-cover"
               />
-              Contact Us
+             <Link href="/contact">Contact Us</Link>
             </div>
               </button>
               </Reveal>
