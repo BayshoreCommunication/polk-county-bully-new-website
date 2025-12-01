@@ -14,7 +14,7 @@ export default function Testimonials() {
     >
       {/* BOTTOM BLUR */}
       <div className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-white/40 to-transparent backdrop-blur-sm pointer-events-none" />
-      <div className="container mx-auto mt-[100px]">
+      <div className="container mx-auto md:mt-[100px] mt-20">
       <Reveal y={-100}  duration={2}>
         <h2 className="text-center text-4xl  md:text-7xl font-extrabold text-white  mb-3 drop-shadow-[6px_6px_0px_#000]">
           Our{" "}

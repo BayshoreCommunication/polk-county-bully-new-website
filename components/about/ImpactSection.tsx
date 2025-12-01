@@ -3,24 +3,29 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
-
 export default function ImpactSection() {
-const [inView, setInView] = useState(false);
-const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [inView, setInView] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
-useEffect(() => {
-  const handleScroll = () => {
-    const section = document.getElementById("counter-section");
-    if (section) {
-      const rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom >= 0) {
-        setInView(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById("counter-section");
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          setInView(true);
+        }
       }
-    }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Function to handle play button click with autoplay
+  const handlePlayClick = () => {
+    setIsVideoPlaying(true);
   };
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat py-16"
@@ -87,7 +92,7 @@ useEffect(() => {
                 />
                 <button
                   type="button"
-                  onClick={() => setIsVideoPlaying(true)}
+                  onClick={handlePlayClick}
                   className="absolute inset-0 flex items-center justify-center outline-none border-none hover:border-none"
                   aria-label="Play video"
                 >
@@ -105,8 +110,8 @@ useEffect(() => {
               </>
             ) : (
               <iframe
-                className="h-[563px] w-[1000px] "
-                src="https://www.youtube.com/embed/BCqJCOWUc-Q?autoplay=1&mute=1&rel=0&playsinline=1"
+                className="h-[563px] w-[1000px]"
+                src="https://www.youtube.com/embed/BsknQQCMqyA?si=7es-fcexV8sy5Obq&autoplay=1&mute=0"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
