@@ -25,7 +25,7 @@ body {
   font-family: var(--font-inter);
 }
 button {
-  @apply rounded-full shadow-md font-semibold hover:scale-105 transition border-b-[3px] border-black;
+  @apply rounded-full shadow-md font-semibold hover:scale-105 transition border-b-[5px] border-black;
 }
 
 /* Prevent background image blur */

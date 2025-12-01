@@ -4,8 +4,7 @@ import Image from "next/image";
 
 export default function EmbeddedSite() {
   return (
-    <section className="relative w-full lg:pt-[100px] pb-12 overflow-hidden">
-
+    <section className="relative w-full lg:pt-[60px] pb-4 md:pb-8 overflow-hidden"> {/* Reduced mobile bottom padding */}
       {/* Background Image using Next.js */}
       <Image
         src="/images/homepage/embedded/bg.webp"
@@ -19,20 +18,20 @@ export default function EmbeddedSite() {
       {/* Optional overlay for text visibility */}
       {/* <div className="absolute inset-0 bg-black/20"></div> */}
 
-      <div className="relative container mx-auto px-6 md:px-8 py-12">
-        <div className="rounded-3xl overflow-hidden shadow-2xl">
+      <div className="relative container mx-auto px-4 md:px-8 py-6 md:py-8"> {/* Reduced mobile padding */}
+        <div className="rounded-xl md:rounded-2xl overflow-hidden shadow-lg md:shadow-xl"> {/* Smaller on mobile */}
           <iframe
             loading="lazy"
             src="https://www.wagtopia.com/search/org?id=1233589&iframe=normal"
             className="
               w-full
-              rounded-3xl
+              rounded-xl md:rounded-2xl
               border-none
               bg-white
             "
             style={{
-              height: "80vh", // Responsive height
-              minHeight: 600,
+              height: "60vh", // Smaller on mobile
+              minHeight: 400, // Smaller min-height on mobile
             }}
           />
         </div>

@@ -219,7 +219,7 @@ export default function OurMerchandise() {
       )}
 
       {/* TOP gradient */}
-      <div className="absolute top-0 w-full h-32 left-0 right-0 bg-gradient-to-t from-transparent to-white"></div>
+      <div className="absolute top-0 w-full h-16 left-0 right-0 bg-gradient-to-t from-transparent to-white"></div>
 
       {/* Bottom gradient */}
       <div className="absolute bottom-0 w-full left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white"></div>
