@@ -1,13 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../motion/Reveal";
-import {
-  FaFacebook,
-  FaFacebookF,
-  FaGoogle,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -32,22 +27,23 @@ export default function Footer() {
   text-center md:text-left
 "
             >
-              <Reveal y={-100}  duration={3}>
-              <h2
-                className="
+              <Reveal y={-100} duration={3}>
+                <h2
+                  className="
     text-3xl sm:text-4xl md:text-6xl 
     leading-tight 
     text-black 
     drop-shadow-[6px_6px_0px_#fff] 
     tracking-wider
   "
-              >
-                Be the First to Meet New Pets Right in Your Inbox
-              </h2>
+                >
+                  Be the First to Meet New Pets Right in Your Inbox
+                </h2>
               </Reveal>
               <div className="w-full max-w-xs md:max-w-sm">
                 <input
                   type="email"
+                  name="email"
                   placeholder="Insert your E-mail Address"
                   className="
         px-4 py-3 
@@ -99,19 +95,19 @@ export default function Footer() {
                 Quick Links
               </h3>
               <div>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
+                <Link href={"/"} className="block text-white/90 mb-2 text-sm">
                   <span className="text-xl">›</span> Home
                 </Link>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
+                <Link href={"/adoption"} className="block text-white/90 mb-2 text-sm">
                   <span className="text-xl">›</span> Adoption
                 </Link>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
+                <Link href={"/learn"} className="block text-white/90 mb-2 text-sm">
                   <span className="text-xl">›</span> Learn
                 </Link>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
+                <Link href={"/about"} className="block text-white/90 mb-2 text-sm">
                   <span className="text-xl">›</span> About Us
                 </Link>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
+                <Link href={"/contact"} className="block text-white/90 mb-2 text-sm">
                   <span className="text-xl">›</span> Contact Us
                 </Link>
               </div>
@@ -121,16 +117,16 @@ export default function Footer() {
                 Resources
               </h3>
               <div>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
+                <Link href={"https://petstablished.com/adoptions/personal-information?application_type=Adopt&donation_section=false&form_id=24575&form_type=generic&generic_form_id=24575&pet_id=715879&section=1&selected_pets=false"} className="block text-white/90 mb-2 text-sm">
                   <span className="text-xl">›</span> Adoption Guide
                 </Link>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
+                <Link href={"https://petstablished.com/adoptions/personal-information?application_type=Foster&donation_section=false&form_id=24574&form_type=generic&generic_form_id=24574&pet_id=715879&section=1&selected_pets=false"} className="block text-white/90 mb-2 text-sm">
                   <span className="text-xl">›</span> Pet Care Tips
                 </Link>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
+                <Link href={"https://www.giveffect.com/charities/27544-polk-county-bully-project/volunteer_application"} className="block text-white/90 mb-2 text-sm">
                   <span className="text-xl">›</span> Shelter Partners
                 </Link>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
+                <Link href={"https://app.giveffect.com/charities/27544-polk-county-bully-project"} className="block text-white/90 mb-2 text-sm">
                   <span className="text-xl">›</span>Volunteer Opportunities
                 </Link>
                 <Link href={"#"} className="block text-white/90 mb-2 text-sm">
@@ -142,18 +138,30 @@ export default function Footer() {
               <h3 className="text-white text-2xl font-semibold mb-4 font-sans">
                 Contact Us
               </h3>
-              <div className="flex gap-2">
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
-                  <FaGoogle size={24} />
+              <div className=" w-full flex justify-start  gap-3 ">
+                <Link
+                  href={"https://www.facebook.com/polkcountybullyproject"}
+                  className="w-9 lg:w-12 h-9 lg:h-12 rounded-full bg-white hover:text-[#009DCA] duration-300 drop-shadow-[0px_6px_0px_#000] flex justify-center items-center"
+                >
+                  <FaFacebookF size={20} />
                 </Link>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
-                  <FaFacebook size={24} />
+                <Link
+                  href={"https://www.instagram.com/polkcountybullyproject/"}
+                  className="w-9 lg:w-12 h-9 lg:h-12 rounded-full bg-white hover:text-[#009DCA] duration-300 drop-shadow-[0px_6px_0px_#000] flex justify-center items-center"
+                >
+                  <FaInstagram size={20} />
                 </Link>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
-                  <FaTwitter size={24} />
+                <Link
+                  href={"https://www.tiktok.com/@polkcountybullyproject"}
+                  className="w-9 lg:w-12 h-9 lg:h-12 rounded-full bg-white hover:text-[#009DCA] duration-300 drop-shadow-[0px_6px_0px_#000] flex justify-center items-center"
+                >
+                  <FaTiktok size={20} />
                 </Link>
-                <Link href={"#"} className="block text-white/90 mb-2 text-sm">
-                  <FaLinkedin size={24} />
+                <Link
+                  href={"https://www.youtube.com/@TheBullyProjecct"}
+                  className="w-9 lg:w-12 h-9 lg:h-12 rounded-full bg-white hover:text-[#009DCA] duration-300 drop-shadow-[0px_6px_0px_#000] flex justify-center items-center"
+                >
+                  <FaYoutube size={20} />
                 </Link>
               </div>
             </div>

@@ -9,45 +9,45 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
-  // Listen for scroll
+  const adoptionLink =
+    "https://petstablished.com/adoptions/personal-information?application_type=Adopt&donation_section=false&form_id=24575&form_type=generic&generic_form_id=24575&pet_id=715879&section=1&selected_pets=false";
+
+  // Scroll detection
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu when clicking outside or pressing Escape
+  // Disable scroll when mobile menu is open
   useEffect(() => {
-    const handleClickOutside = () => {
-      if (open) setOpen(false);
-    };
-
-    const handleEscapeKey = (event: KeyboardEvent) => {
-      if (open && event.key === "Escape") setOpen(false);
-    };
-
-    if (open) {
-      document.addEventListener("click", handleClickOutside);
-      document.addEventListener("keydown", handleEscapeKey);
-      document.body.style.overflow = "hidden"; // disable scroll
-    }
-
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-      document.removeEventListener("keydown", handleEscapeKey);
-      document.body.style.overflow = "auto"; // restore scroll
-    };
+    document.body.style.overflow = open ? "hidden" : "auto";
   }, [open]);
 
-  // Prevent clicks inside mobile menu from closing it
-  const handleMobileMenuClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
-  };
+  // Close mobile menu when clicking outside or pressing Escape
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        open &&
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(e.target as Node)
+      ) {
+        setOpen(false);
+      }
+    };
 
-  const adoptionLink =
-    "https://petstablished.com/adoptions/personal-information?application_type=Adopt&donation_section=false&form_id=24575&form_type=generic&generic_form_id=24575&pet_id=715879&section=1&selected_pets=false";
+    const handleEscapeKey = (e: KeyboardEvent) => {
+      if (open && e.key === "Escape") setOpen(false);
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEscapeKey);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscapeKey);
+    };
+  }, [open]);
 
   return (
     <nav
@@ -96,14 +96,14 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Toggle Button */}
+        {/* Mobile Toggle */}
         <div
           className={`md:hidden text-3xl cursor-pointer transition-all duration-300 ${
             scrolled ? "text-black" : "text-white"
           }`}
           onClick={() => setOpen(!open)}
         >
-          {open ? "✕" : "☰"}
+          {open ? "" : "☰"}
         </div>
       </div>
 
@@ -116,50 +116,55 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 flex flex-col"
-            onClick={handleMobileMenuClick} // Prevent close when clicking inside
+            className="md:hidden fixed inset-0 z-[60] h-screen flex flex-col"
           >
-            {/* Top Bar: Logo + X */}
-            <div className="flex items-center justify-between px-6 py-4">
-              <Image
-                src="/images/homepage/navbar/logo.png"
-                width={1000}
-                height={800}
-                alt="Logo"
-                className="w-20 h-auto rounded"
-              />
-              <div
-                className="text-white text-3xl cursor-pointer"
-                onClick={() => setOpen(false)}
-              >
-                ✕
+            {/* Blurred Background */}
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-md" />
+
+            {/* Menu Content */}
+            <div className="relative z-50 flex flex-col h-full text-white">
+              {/* Top Bar: Logo + Close */}
+              <div className="flex items-center justify-between px-6 py-4">
+                <Image
+                  src="/images/homepage/navbar/logo.png"
+                  width={1000}
+                  height={800}
+                  alt="Logo"
+                  className="w-20 h-auto rounded"
+                />
+                <div
+                  className="text-white text-3xl cursor-pointer"
+                  onClick={() => setOpen(false)}
+                >
+                  ✕
+                </div>
               </div>
-            </div>
 
-            {/* Menu Items */}
-            <ul className="flex flex-col items-center mt-10 space-y-6 text-xl text-white">
-              {["Home", "Adoption", "Learn", "About", "Contact"].map(
-                (item, i) => (
-                  <li key={i}>
-                    <Link
-                      href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                      onClick={() => setOpen(false)}
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                )
-              )}
-            </ul>
+              {/* Menu Items */}
+              <ul className="flex flex-col items-center mt-10 space-y-6 text-xl">
+                {["Home", "Adoption", "Learn", "About", "Contact"].map(
+                  (item, i) => (
+                    <li key={i}>
+                      <Link
+                        href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                        onClick={() => setOpen(false)}
+                      >
+                        {item}
+                      </Link>
+                    </li>
+                  )
+                )}
+              </ul>
 
-            {/* Button */}
-            <div className="flex justify-center mt-10">
-              <button
-                className="bg-white text-primary text-xl px-6 py-3 rounded-full font-semibold"
-                onClick={() => window.open(adoptionLink, "_blank")}
-              >
-                Adopt Now
-              </button>
+              {/* Button */}
+              <div className="flex justify-center mt-10">
+                <button
+                  className="bg-white text-primary text-xl px-6 py-3 rounded-full font-semibold"
+                  onClick={() => window.open(adoptionLink, "_blank")}
+                >
+                  Adopt Now
+                </button>
+              </div>
             </div>
           </motion.div>
         )}
