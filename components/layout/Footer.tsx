@@ -151,28 +151,25 @@ export default function Footer() {
                 href="https://petstablished.com/adoptions/personal-information?application_type=Adopt&donation_section=false&form_id=24575&form_type=generic&generic_form_id=24575&pet_id=715879&section=1&selected_pets=false"
                 className="block text-white/90 mb-2 text-sm"
               >
-                <span className="text-xl">›</span> Adoption Guide
+                <span className="text-xl">›</span> Adoption Application
               </Link>
               <Link
                 href="https://petstablished.com/adoptions/personal-information?application_type=Foster&donation_section=false&form_id=24574&form_type=generic&generic_form_id=24574&pet_id=715879&section=1&selected_pets=false"
                 className="block text-white/90 mb-2 text-sm"
               >
-                <span className="text-xl">›</span> Pet Care Tips
+                <span className="text-xl">›</span> Foster Application
               </Link>
               <Link
                 href="https://www.giveffect.com/charities/27544-polk-county-bully-project/volunteer_application"
                 className="block text-white/90 mb-2 text-sm"
               >
-                <span className="text-xl">›</span> Shelter Partners
+                <span className="text-xl">›</span> Contact Information  
               </Link>
               <Link
                 href="https://app.giveffect.com/charities/27544-polk-county-bully-project"
                 className="block text-white/90 mb-2 text-sm"
               >
-                <span className="text-xl">›</span> Volunteer Opportunities
-              </Link>
-              <Link href="#" className="block text-white/90 mb-2 text-sm">
-                <span className="text-xl">›</span> Help Center
+                <span className="text-xl">›</span> Donate
               </Link>
             </div>
           </div>
