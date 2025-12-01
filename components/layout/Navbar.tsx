@@ -126,7 +126,7 @@ export default function Navbar() {
               {/* Top Bar: Logo + Close */}
               <div className="flex items-center justify-between px-6 py-4">
                 <Image
-                  src="/images/homepage/navbar/logo.png"
+                  src="/images/homepage/navbar/logo.webp"
                   width={1000}
                   height={800}
                   alt="Logo"
